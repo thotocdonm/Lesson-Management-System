@@ -36,3 +36,5 @@ C:\Users\Admin\source\repos\QuanLyLichHoc\QuanLyLichHoc\obj\Debug\QuanLyLichHoc.
 C:\Users\Admin\source\repos\QuanLyLichHoc\QuanLyLichHoc\obj\Debug\QuanLyLi.7E170528.Up2Date
 C:\Users\Admin\source\repos\QuanLyLichHoc\QuanLyLichHoc\obj\Debug\QuanLyLichHoc.exe
 C:\Users\Admin\source\repos\QuanLyLichHoc\QuanLyLichHoc\obj\Debug\QuanLyLichHoc.pdb
+C:\Users\Admin\source\repos\QuanLyLichHoc\QuanLyLichHoc\obj\Debug\QuanLyLichHoc.Forms.Login.LoginForm.resources
+C:\Users\Admin\source\repos\QuanLyLichHoc\QuanLyLichHoc\obj\Debug\QuanLyLichHoc.Controls.LessonControl.resources
