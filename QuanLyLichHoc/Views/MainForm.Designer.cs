@@ -135,6 +135,7 @@
             this.LecturerBtn.TabIndex = 3;
             this.LecturerBtn.Text = "Lecturers";
             this.LecturerBtn.UseVisualStyleBackColor = false;
+            this.LecturerBtn.Click += new System.EventHandler(this.LecturerBtn_Click);
             // 
             // LessonBtn
             // 
@@ -170,7 +171,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1709, 788);
+            this.ClientSize = new System.Drawing.Size(1155, 687);
             this.Controls.Add(this.MainContent);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

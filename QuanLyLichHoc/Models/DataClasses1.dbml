@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Lesson_Management" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-H3FAVBH;Initial Catalog=Lesson_Management;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="QuanLyLichHoc.Properties.Settings" SettingsPropertyName="Lesson_ManagementConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Lecture" Member="Lectures">
+    <Type Name="Lecture">
+      <Column Name="LectureID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LectureName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="LectureGender" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="LectureAddress" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="LectureStatus" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
