@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyLichHoc.Controls;
+using QuanLyLichHoc.Utils;
+using System;
 using System.Windows.Forms;
 
 namespace QuanLyLichHoc
@@ -22,7 +24,8 @@ namespace QuanLyLichHoc
 
         private void LessonBtn_Click(object sender, EventArgs e)
         {
-
+            LessonControl control = new LessonControl();
+            Shared.ShowMainContent(control, MainContent);
         }
     }
 }
