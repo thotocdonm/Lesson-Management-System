@@ -6,6 +6,10 @@
 # dotenv files
 .env
 
+# Ignore the bin and obj directories in QuanLyLichHoc
+QuanLyLichHoc/bin/
+QuanLyLichHoc/obj/
+
 # User-specific files
 *.rsuser
 *.suo
