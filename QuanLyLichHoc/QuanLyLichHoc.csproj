@@ -123,11 +123,14 @@
     <Compile Include="Forms\Login\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\ILesson.cs" />
+    <Compile Include="Models\LessonDetail.cs" />
     <Compile Include="Models\DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Services\LessonService.cs" />
     <Compile Include="Utils\Shared.cs" />
     <Compile Include="Views\StudentForm.cs">
       <SubType>Form</SubType>
@@ -197,7 +200,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
