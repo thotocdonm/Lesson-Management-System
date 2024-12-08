@@ -80,3 +80,5 @@ D:\BTL\Lesson-Management-System\QuanLyLichHoc\obj\Debug\QuanLyLichHoc.exe
 D:\BTL\Lesson-Management-System\QuanLyLichHoc\obj\Debug\QuanLyLichHoc.pdb
 D:\BTL\Lesson-Management-System\QuanLyLichHoc\obj\Debug\QuanLyLichHoc.Controls.LecturerControl.resources
 D:\BTL\Lesson-Management-System\QuanLyLichHoc\obj\Debug\QuanLyLichHoc.Forms.UpdateLecturer.UpdateLecturer.resources
+D:\BTL\Lesson-Management-System\QuanLyLichHoc\obj\Debug\QuanLyLichHoc.Forms.RoleLecturer.RoleLecturerForm.resources
+D:\BTL\Lesson-Management-System\QuanLyLichHoc\obj\Debug\QuanLyLichHoc.Controls.LecturerInfControl.resources
