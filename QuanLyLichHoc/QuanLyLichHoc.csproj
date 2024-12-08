@@ -105,6 +105,9 @@
     <Compile Include="Controls\Student\StudentInformationControl.Designer.cs">
       <DependentUpon>StudentInformationControl.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="Forms\LoginForm.cs">
+
     <Compile Include="Controls\HomeControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -118,10 +121,17 @@
       <DependentUpon>HomeControlDay.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Login\LoginForm.cs">
+
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Login\LoginForm.Designer.cs">
+    <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
@@ -155,8 +165,11 @@
     <EmbeddedResource Include="Controls\Student\StudentInformationControl.resx">
       <DependentUpon>StudentInformationControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Login\LoginForm.resx">
+    <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -166,6 +179,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -196,11 +210,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile-password-forgot.png" />
+    <Content Include="Resources\Register.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
