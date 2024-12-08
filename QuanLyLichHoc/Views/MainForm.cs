@@ -28,6 +28,11 @@ namespace QuanLyLichHoc
             Shared.ShowMainContent(control, MainContent);
         }
 
+<<<<<<< HEAD
+        private void SubjectsBtn_Click(object sender, EventArgs e)
+        {
+            SubjectControls control = new SubjectControls();
+=======
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -36,6 +41,7 @@ namespace QuanLyLichHoc
         private void HomeBtn_Click(object sender, EventArgs e)
         {
             HomeControl control = new HomeControl();
+>>>>>>> master
             Shared.ShowMainContent(control, MainContent);
         }
 
@@ -43,10 +49,13 @@ namespace QuanLyLichHoc
         {
 
         }
+<<<<<<< HEAD
+=======
 
         private void SubjectsBtn_Click(object sender, EventArgs e)
         {
 
         }
+>>>>>>> master
     }
 }

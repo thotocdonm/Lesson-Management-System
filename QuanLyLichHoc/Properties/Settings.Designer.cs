@@ -12,7 +12,11 @@ namespace QuanLyLichHoc.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+<<<<<<< HEAD
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.12.0.0")]
+=======
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.10.0.0")]
+>>>>>>> master
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,14 +30,32 @@ namespace QuanLyLichHoc.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+<<<<<<< HEAD
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-RKQKC3JG\\SQLEXPRESS;Initial Catalog=QuanLyLichHoc;User ID=sa;T" +
+            "rustServerCertificate=True")]
+        public string QuanLyLichHocConnectionString {
+            get {
+                return ((string)(this["QuanLyLichHocConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-RKQKC3JG\\SQLEXPRESS;Initial Catalog=Lesson_Management_System;U" +
+            "ser ID=sa;TrustServerCertificate=True")]
+=======
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-UOULN0V\\SQLEXPRESS;Initial Catalog=Lesson_Management_System;I" +
             "ntegrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=T" +
             "rue")]
+>>>>>>> master
         public string Lesson_Management_SystemConnectionString {
             get {
                 return ((string)(this["Lesson_Management_SystemConnectionString"]));
             }
         }
+<<<<<<< HEAD
+=======
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -45,5 +67,6 @@ namespace QuanLyLichHoc.Properties {
                 return ((string)(this["Lesson_Management_SystemConnectionString1"]));
             }
         }
+>>>>>>> master
     }
 }

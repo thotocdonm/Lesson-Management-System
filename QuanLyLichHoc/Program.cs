@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+﻿using QuanLyLichHoc.Controls;
+=======
 ﻿using QuanLyLichHoc.Views;
+>>>>>>> master
 using System;
 using System.Windows.Forms;
 
