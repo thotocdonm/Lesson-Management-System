@@ -30,12 +30,12 @@ namespace QuanLyLichHoc.Models
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertLecturer(Lecturer instance);
-    partial void UpdateLecturer(Lecturer instance);
-    partial void DeleteLecturer(Lecturer instance);
     partial void InsertEnrollment(Enrollment instance);
     partial void UpdateEnrollment(Enrollment instance);
     partial void DeleteEnrollment(Enrollment instance);
+    partial void InsertLecturer(Lecturer instance);
+    partial void UpdateLecturer(Lecturer instance);
+    partial void DeleteLecturer(Lecturer instance);
     partial void InsertLesson(Lesson instance);
     partial void UpdateLesson(Lesson instance);
     partial void DeleteLesson(Lesson instance);
@@ -49,6 +49,12 @@ namespace QuanLyLichHoc.Models
     partial void UpdateUser(User instance);
     partial void DeleteUser(User instance);
     #endregion
+		
+		public DataClasses1DataContext() : 
+				base(global::QuanLyLichHoc.Properties.Settings.Default.Lesson_Management_SystemConnectionString1, mappingSource)
+		{
+			OnCreated();
+		}
 		
 		public DataClasses1DataContext(string connection) : 
 				base(connection, mappingSource)
@@ -74,19 +80,19 @@ namespace QuanLyLichHoc.Models
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<Lecturer> Lecturers
-		{
-			get
-			{
-				return this.GetTable<Lecturer>();
-			}
-		}
-		
 		public System.Data.Linq.Table<Enrollment> Enrollments
 		{
 			get
 			{
 				return this.GetTable<Enrollment>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Lecturer> Lecturers
+		{
+			get
+			{
+				return this.GetTable<Lecturer>();
 			}
 		}
 		
@@ -119,6 +125,270 @@ namespace QuanLyLichHoc.Models
 			get
 			{
 				return this.GetTable<User>();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Enrollments")]
+	public partial class Enrollment : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _enrollmentId;
+		
+		private string _studentId;
+		
+		private string _subjectId;
+		
+		private System.Nullable<System.DateTime> _enrolledAt;
+		
+		private System.Nullable<System.DateTime> _createAt;
+		
+		private System.Nullable<int> _isDeleted;
+		
+		private EntityRef<Student> _Student;
+		
+		private EntityRef<Subject> _Subject;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnenrollmentIdChanging(string value);
+    partial void OnenrollmentIdChanged();
+    partial void OnstudentIdChanging(string value);
+    partial void OnstudentIdChanged();
+    partial void OnsubjectIdChanging(string value);
+    partial void OnsubjectIdChanged();
+    partial void OnenrolledAtChanging(System.Nullable<System.DateTime> value);
+    partial void OnenrolledAtChanged();
+    partial void OncreateAtChanging(System.Nullable<System.DateTime> value);
+    partial void OncreateAtChanged();
+    partial void OnisDeletedChanging(System.Nullable<int> value);
+    partial void OnisDeletedChanged();
+    #endregion
+		
+		public Enrollment()
+		{
+			this._Student = default(EntityRef<Student>);
+			this._Subject = default(EntityRef<Subject>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_enrollmentId", DbType="VarChar(20) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string enrollmentId
+		{
+			get
+			{
+				return this._enrollmentId;
+			}
+			set
+			{
+				if ((this._enrollmentId != value))
+				{
+					this.OnenrollmentIdChanging(value);
+					this.SendPropertyChanging();
+					this._enrollmentId = value;
+					this.SendPropertyChanged("enrollmentId");
+					this.OnenrollmentIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_studentId", DbType="VarChar(20)")]
+		public string studentId
+		{
+			get
+			{
+				return this._studentId;
+			}
+			set
+			{
+				if ((this._studentId != value))
+				{
+					if (this._Student.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnstudentIdChanging(value);
+					this.SendPropertyChanging();
+					this._studentId = value;
+					this.SendPropertyChanged("studentId");
+					this.OnstudentIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_subjectId", DbType="VarChar(20)")]
+		public string subjectId
+		{
+			get
+			{
+				return this._subjectId;
+			}
+			set
+			{
+				if ((this._subjectId != value))
+				{
+					if (this._Subject.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnsubjectIdChanging(value);
+					this.SendPropertyChanging();
+					this._subjectId = value;
+					this.SendPropertyChanged("subjectId");
+					this.OnsubjectIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_enrolledAt", DbType="DateTime")]
+		public System.Nullable<System.DateTime> enrolledAt
+		{
+			get
+			{
+				return this._enrolledAt;
+			}
+			set
+			{
+				if ((this._enrolledAt != value))
+				{
+					this.OnenrolledAtChanging(value);
+					this.SendPropertyChanging();
+					this._enrolledAt = value;
+					this.SendPropertyChanged("enrolledAt");
+					this.OnenrolledAtChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_createAt", DbType="DateTime")]
+		public System.Nullable<System.DateTime> createAt
+		{
+			get
+			{
+				return this._createAt;
+			}
+			set
+			{
+				if ((this._createAt != value))
+				{
+					this.OncreateAtChanging(value);
+					this.SendPropertyChanging();
+					this._createAt = value;
+					this.SendPropertyChanged("createAt");
+					this.OncreateAtChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isDeleted", DbType="Int")]
+		public System.Nullable<int> isDeleted
+		{
+			get
+			{
+				return this._isDeleted;
+			}
+			set
+			{
+				if ((this._isDeleted != value))
+				{
+					this.OnisDeletedChanging(value);
+					this.SendPropertyChanging();
+					this._isDeleted = value;
+					this.SendPropertyChanged("isDeleted");
+					this.OnisDeletedChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Student_Enrollment", Storage="_Student", ThisKey="studentId", OtherKey="studentId", IsForeignKey=true)]
+		public Student Student
+		{
+			get
+			{
+				return this._Student.Entity;
+			}
+			set
+			{
+				Student previousValue = this._Student.Entity;
+				if (((previousValue != value) 
+							|| (this._Student.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Student.Entity = null;
+						previousValue.Enrollments.Remove(this);
+					}
+					this._Student.Entity = value;
+					if ((value != null))
+					{
+						value.Enrollments.Add(this);
+						this._studentId = value.studentId;
+					}
+					else
+					{
+						this._studentId = default(string);
+					}
+					this.SendPropertyChanged("Student");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Subject_Enrollment", Storage="_Subject", ThisKey="subjectId", OtherKey="subjectId", IsForeignKey=true)]
+		public Subject Subject
+		{
+			get
+			{
+				return this._Subject.Entity;
+			}
+			set
+			{
+				Subject previousValue = this._Subject.Entity;
+				if (((previousValue != value) 
+							|| (this._Subject.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Subject.Entity = null;
+						previousValue.Enrollments.Remove(this);
+					}
+					this._Subject.Entity = value;
+					if ((value != null))
+					{
+						value.Enrollments.Add(this);
+						this._subjectId = value.subjectId;
+					}
+					else
+					{
+						this._subjectId = default(string);
+					}
+					this.SendPropertyChanged("Subject");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -443,270 +713,6 @@ namespace QuanLyLichHoc.Models
 		{
 			this.SendPropertyChanging();
 			entity.Lecturer = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Enrollments")]
-	public partial class Enrollment : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private string _enrollmentId;
-		
-		private string _studentId;
-		
-		private string _subjectId;
-		
-		private System.Nullable<System.DateTime> _enrolledAt;
-		
-		private System.Nullable<System.DateTime> _createAt;
-		
-		private System.Nullable<int> _isDeleted;
-		
-		private EntityRef<Student> _Student;
-		
-		private EntityRef<Subject> _Subject;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnenrollmentIdChanging(string value);
-    partial void OnenrollmentIdChanged();
-    partial void OnstudentIdChanging(string value);
-    partial void OnstudentIdChanged();
-    partial void OnsubjectIdChanging(string value);
-    partial void OnsubjectIdChanged();
-    partial void OnenrolledAtChanging(System.Nullable<System.DateTime> value);
-    partial void OnenrolledAtChanged();
-    partial void OncreateAtChanging(System.Nullable<System.DateTime> value);
-    partial void OncreateAtChanged();
-    partial void OnisDeletedChanging(System.Nullable<int> value);
-    partial void OnisDeletedChanged();
-    #endregion
-		
-		public Enrollment()
-		{
-			this._Student = default(EntityRef<Student>);
-			this._Subject = default(EntityRef<Subject>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_enrollmentId", DbType="VarChar(20) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string enrollmentId
-		{
-			get
-			{
-				return this._enrollmentId;
-			}
-			set
-			{
-				if ((this._enrollmentId != value))
-				{
-					this.OnenrollmentIdChanging(value);
-					this.SendPropertyChanging();
-					this._enrollmentId = value;
-					this.SendPropertyChanged("enrollmentId");
-					this.OnenrollmentIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_studentId", DbType="VarChar(20)")]
-		public string studentId
-		{
-			get
-			{
-				return this._studentId;
-			}
-			set
-			{
-				if ((this._studentId != value))
-				{
-					if (this._Student.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnstudentIdChanging(value);
-					this.SendPropertyChanging();
-					this._studentId = value;
-					this.SendPropertyChanged("studentId");
-					this.OnstudentIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_subjectId", DbType="VarChar(20)")]
-		public string subjectId
-		{
-			get
-			{
-				return this._subjectId;
-			}
-			set
-			{
-				if ((this._subjectId != value))
-				{
-					if (this._Subject.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnsubjectIdChanging(value);
-					this.SendPropertyChanging();
-					this._subjectId = value;
-					this.SendPropertyChanged("subjectId");
-					this.OnsubjectIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_enrolledAt", DbType="DateTime")]
-		public System.Nullable<System.DateTime> enrolledAt
-		{
-			get
-			{
-				return this._enrolledAt;
-			}
-			set
-			{
-				if ((this._enrolledAt != value))
-				{
-					this.OnenrolledAtChanging(value);
-					this.SendPropertyChanging();
-					this._enrolledAt = value;
-					this.SendPropertyChanged("enrolledAt");
-					this.OnenrolledAtChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_createAt", DbType="DateTime")]
-		public System.Nullable<System.DateTime> createAt
-		{
-			get
-			{
-				return this._createAt;
-			}
-			set
-			{
-				if ((this._createAt != value))
-				{
-					this.OncreateAtChanging(value);
-					this.SendPropertyChanging();
-					this._createAt = value;
-					this.SendPropertyChanged("createAt");
-					this.OncreateAtChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isDeleted", DbType="Int")]
-		public System.Nullable<int> isDeleted
-		{
-			get
-			{
-				return this._isDeleted;
-			}
-			set
-			{
-				if ((this._isDeleted != value))
-				{
-					this.OnisDeletedChanging(value);
-					this.SendPropertyChanging();
-					this._isDeleted = value;
-					this.SendPropertyChanged("isDeleted");
-					this.OnisDeletedChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Student_Enrollment", Storage="_Student", ThisKey="studentId", OtherKey="studentId", IsForeignKey=true)]
-		public Student Student
-		{
-			get
-			{
-				return this._Student.Entity;
-			}
-			set
-			{
-				Student previousValue = this._Student.Entity;
-				if (((previousValue != value) 
-							|| (this._Student.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Student.Entity = null;
-						previousValue.Enrollments.Remove(this);
-					}
-					this._Student.Entity = value;
-					if ((value != null))
-					{
-						value.Enrollments.Add(this);
-						this._studentId = value.studentId;
-					}
-					else
-					{
-						this._studentId = default(string);
-					}
-					this.SendPropertyChanged("Student");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Subject_Enrollment", Storage="_Subject", ThisKey="subjectId", OtherKey="subjectId", IsForeignKey=true)]
-		public Subject Subject
-		{
-			get
-			{
-				return this._Subject.Entity;
-			}
-			set
-			{
-				Subject previousValue = this._Subject.Entity;
-				if (((previousValue != value) 
-							|| (this._Subject.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Subject.Entity = null;
-						previousValue.Enrollments.Remove(this);
-					}
-					this._Subject.Entity = value;
-					if ((value != null))
-					{
-						value.Enrollments.Add(this);
-						this._subjectId = value.subjectId;
-					}
-					else
-					{
-						this._subjectId = default(string);
-					}
-					this.SendPropertyChanged("Subject");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
 		}
 	}
 	
