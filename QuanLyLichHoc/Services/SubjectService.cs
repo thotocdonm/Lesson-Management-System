@@ -10,7 +10,7 @@ namespace QuanLyLichHoc.Services
 {
     internal class SubjectService
     {
-        DataClasses1DataContext db = new DataClasses1DataContext("Data Source=LAPTOP-RKQKC3JG\\SQLEXPRESS;Initial Catalog=QuanLyLichHoc;Integrated Security=True");
+        DataClasses1DataContext db = new DataClasses1DataContext("Data Source=LAPTOP-RKQKC3JG\\SQLEXPRESS;Initial Catalog=Lesson_Management_System;Integrated Security=True");
 
 
     public FunctionResultService<List<Subject>> GetAll()
@@ -18,8 +18,8 @@ namespace QuanLyLichHoc.Services
         FunctionResultService<List<Subject>> rs = new FunctionResultService<List<Subject>>(); ;
         try
         {
-            var qr = db.Subjects;
-            if (qr.Any())
+                var qr = db.Subjects.Where(o => o.isDeleted == 0);
+                if (qr.Any())
             {
                 //lay dc du lieu tu csdl(success)
                 rs.ErrCode = EnumErrCodeService.Success;
@@ -46,12 +46,12 @@ namespace QuanLyLichHoc.Services
         return rs;
     }
 
-    public FunctionResultService<Subject> Them(string subjectId, string subjectName, string creditHours)
+    public FunctionResultService<Subject> Them(string subjectId, string subjectName, int creditHours)
     {
         FunctionResultService<Subject> rs = new FunctionResultService<Subject>(); ;
         try
         {
-            if (string.IsNullOrEmpty(subjectId) || string.IsNullOrEmpty(subjectName) || string.IsNullOrEmpty(creditHours))
+            if (string.IsNullOrEmpty(subjectId) || string.IsNullOrEmpty(subjectName) || string.IsNullOrEmpty(creditHours.ToString()))
             {
                 rs.ErrCode = EnumErrCodeService.InvalidInput;
                 rs.ErrDesc = "Vui lòng nhập đầy đủ các trường dữ liệu bắt buộc";
@@ -64,6 +64,8 @@ namespace QuanLyLichHoc.Services
             obj.subjectId = subjectId;
             obj.subjectName = subjectName;
             obj.creditHours = creditHours;
+            obj.createAt = DateTime.Now;
+            obj.isDeleted = 0;
 
 
             db.Subjects.InsertOnSubmit(obj);
@@ -84,12 +86,12 @@ namespace QuanLyLichHoc.Services
         return rs;
     }
 
-    public FunctionResultService<Subject> Sua(string subjectId, string subjectName, string creditHours)
+    public FunctionResultService<Subject> Sua(string subjectId, string subjectName, int creditHours)
     {
         FunctionResultService<Subject> rs = new FunctionResultService<Subject>(); ;
         try
         {
-            if (string.IsNullOrEmpty(subjectId) || string.IsNullOrEmpty(subjectName) || string.IsNullOrEmpty(creditHours))
+            if (string.IsNullOrEmpty(subjectId) || string.IsNullOrEmpty(subjectName) || string.IsNullOrEmpty(creditHours.ToString()))
             {
                 rs.ErrCode = EnumErrCodeService.InvalidInput;
                 rs.ErrDesc = "Vui lòng nhập đầy đủ các trường dữ liệu bắt buộc";
@@ -97,10 +99,9 @@ namespace QuanLyLichHoc.Services
                 return rs;
             }
 
-            //tbl_TaiKhoan obj = new tbl_TaiKhoan();
-
-            var qr = db.Subjects.Where(o => o.subjectId == subjectId);
-            if (qr.Any())
+                //tbl_TaiKhoan obj = new tbl_TaiKhoan();
+                var qr = db.Subjects.Where(o => o.subjectId == subjectId && o.isDeleted == 0);
+                if (qr.Any())
             {
                 var obj = qr.SingleOrDefault();
                 obj.subjectId = subjectId;
@@ -134,47 +135,41 @@ namespace QuanLyLichHoc.Services
         return rs;
     }
 
-    public FunctionResultService<Subject> Xoa(string subjectId)
-    {
-        FunctionResultService<Subject> rs = new FunctionResultService<Subject>();
-
-        try
+        public FunctionResultService<Subject> Xoa(string subjectId)
         {
+            FunctionResultService<Subject> rs = new FunctionResultService<Subject>();
 
-
-            //tbl_TaiKhoan obj = new tbl_TaiKhoan();
-
-            var qr = db.Subjects.Where(o => o.subjectId == subjectId);
-            if (qr.Any())
+            try
             {
-                var obj = qr.SingleOrDefault();
+                var qr = db.Subjects.Where(o => o.subjectId == subjectId && o.isDeleted == 0);
+                if (qr.Any())
+                {
+                    var obj = qr.SingleOrDefault();
+                    obj.isDeleted = 1; // Chỉ đánh dấu xóa, không xóa vật lý
 
-                db.Subjects.DeleteOnSubmit(obj);
-                db.SubmitChanges();
+                    db.SubmitChanges();
 
-                rs.ErrCode = EnumErrCodeService.Success;
-                rs.ErrDesc = "Xóa môn học thành công";
-                rs.Data = obj;
+                    rs.ErrCode = EnumErrCodeService.Success;
+                    rs.ErrDesc = "Xóa môn học thành công (đánh dấu là đã xóa)";
+                    rs.Data = obj;
+                }
+                else
+                {
+                    rs.ErrCode = EnumErrCodeService.Empty;
+                    rs.ErrDesc = "Không tìm thấy môn học cần xóa hoặc đã bị xóa trước đó";
+                    rs.Data = null;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                rs.ErrCode = EnumErrCodeService.Empty;
-                rs.ErrDesc = "Không tìm thấy môn học cần xóa";
+                rs.ErrCode = EnumErrCodeService.Error;
+                rs.ErrDesc = "Có lỗi xảy ra trong quá trình xóa dữ liệu môn học. Chi tiết lỗi: " + ex.Message;
                 rs.Data = null;
             }
 
-
-        }
-        catch (Exception ex)
-        {
-            //error
-            rs.ErrCode = EnumErrCodeService.Error;
-            rs.ErrDesc = "Có lỗi xảy ra trong quá trình xóa dữ liệu môn học. Chi tiết lỗi: " + ex.Message;
-            rs.Data = null;
+            return rs;
         }
 
-        return rs;
-    }
         public FunctionResultService<List<Subject>> TimKiem(string keyword)
         {
             FunctionResultService<List<Subject>> rs = new FunctionResultService<List<Subject>>();
@@ -192,7 +187,7 @@ namespace QuanLyLichHoc.Services
 
                 // Truy vấn dữ liệu
                 var qr = db.Subjects
-                           .Where(o => o.subjectName.Contains(keyword));
+                           .Where(o => o.isDeleted == 0 && o.subjectName.Contains(keyword));
 
                 if (qr.Any())
                 {

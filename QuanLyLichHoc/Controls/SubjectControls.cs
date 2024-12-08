@@ -102,7 +102,13 @@ namespace QuanLyLichHoc.Controls
             }
             string subjectId = txt_MaMH.Text;
             string subjectName = txt_TenMH.Text;
-            string creditHours = txt_SoTC.Text;
+            int creditHours;
+            // Chuyển đổi giá trị tín chỉ sang số nguyên
+            if (!int.TryParse(txt_SoTC.Text, out creditHours) || creditHours < 0)
+            {
+                MessageBox.Show("Số tín chỉ không hợp lệ! Vui lòng nhập số nguyên dương.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             var rs = ctrl.Them(subjectId, subjectName, creditHours);
 
@@ -138,7 +144,13 @@ namespace QuanLyLichHoc.Controls
         {
             string subjectId = txt_MaMH.Text;
             string subjectName = txt_TenMH.Text;
-            string creditHours = txt_SoTC.Text;
+            int creditHours;
+            // Chuyển đổi giá trị tín chỉ sang số nguyên
+            if (!int.TryParse(txt_SoTC.Text, out creditHours) || creditHours < 0)
+            {
+                MessageBox.Show("Số tín chỉ không hợp lệ! Vui lòng nhập số nguyên dương.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             var rs = ctrl.Sua(subjectId, subjectName, creditHours);
             switch (rs.ErrCode)

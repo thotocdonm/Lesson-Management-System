@@ -33,5 +33,16 @@ namespace QuanLyLichHoc.Properties {
                 return ((string)(this["QuanLyLichHocConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-RKQKC3JG\\SQLEXPRESS;Initial Catalog=Lesson_Management_System;U" +
+            "ser ID=sa;TrustServerCertificate=True")]
+        public string Lesson_Management_SystemConnectionString {
+            get {
+                return ((string)(this["Lesson_Management_SystemConnectionString"]));
+            }
+        }
     }
 }
