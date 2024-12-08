@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "D:\\BTL\\Lesson-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\btl\\lesson-management-system\\quanlylichhoc\\services\\lecturerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\services\\lecturerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\btl\\lesson-management-system\\quanlylichhoc\\controls\\lecturercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\lecturercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\btl\\lesson-management-system\\quanlylichhoc\\interfaces\\ilecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\interfaces\\ilecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\btl\\lesson-management-system\\quanlylichhoc\\controls\\lecturercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|D:\\BTL\\Lesson-Management-System\\quanlylichhoc\\controls\\lecturercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\lecturercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\btl\\lesson-management-system\\quanlylichhoc\\forms\\updatelecturer\\updatelecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|D:\\BTL\\Lesson-Management-System\\quanlylichhoc\\services\\lecturerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\services\\lecturerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|D:\\BTL\\Lesson-Management-System\\quanlylichhoc\\models\\dataclasses1.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\models\\dataclasses1.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|D:\\BTL\\Lesson-Management-System\\quanlylichhoc\\forms\\updatelecturer\\updatelecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\forms\\updatelecturer\\updatelecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\btl\\lesson-management-system\\quanlylichhoc\\forms\\updatelecturer\\updatelecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|D:\\BTL\\Lesson-Management-System\\quanlylichhoc\\forms\\updatelecturer\\updatelecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\forms\\updatelecturer\\updatelecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|D:\\BTL\\Lesson-Management-System\\quanlylichhoc\\interfaces\\ilecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\interfaces\\ilecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|D:\\BTL\\Lesson-Management-System\\quanlylichhoc\\controls\\lecturercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\lecturercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|D:\\BTL\\Lesson-Management-System\\quanlylichhoc\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,11 +47,11 @@
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\forms\\login\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\btl\\lesson-management-system\\quanlylichhoc\\forms\\updatelecturer\\updatelecturer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|D:\\BTL\\Lesson-Management-System\\quanlylichhoc\\forms\\updatelecturer\\updatelecturer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\forms\\updatelecturer\\updatelecturer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\btl\\lesson-management-system\\quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|D:\\BTL\\Lesson-Management-System\\quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -51,19 +59,15 @@
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\btl\\lesson-management-system\\quanlylichhoc\\controls\\lessoncontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|D:\\BTL\\Lesson-Management-System\\quanlylichhoc\\controls\\lessoncontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\lessoncontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\btl\\lesson-management-system\\quanlylichhoc\\models\\dataclasses1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|D:\\BTL\\Lesson-Management-System\\quanlylichhoc\\models\\dataclasses1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\models\\dataclasses1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\btl\\lesson-management-system\\quanlylichhoc\\models\\dataclasses1.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
-      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\models\\dataclasses1.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\btl\\lesson-management-system\\quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|D:\\BTL\\Lesson-Management-System\\quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -81,11 +85,11 @@
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedHeight": 223,
           "SelectedChildIndex": 5,
           "Children": [
             {
@@ -105,29 +109,57 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "LecturerControl.cs",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LecturerControl.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LecturerControl.cs",
               "ToolTip": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LecturerControl.cs",
               "RelativeToolTip": "QuanLyLichHoc\\Controls\\LecturerControl.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAwwJsAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAAwOIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T08:33:06.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LecturerService.cs",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Services\\LecturerService.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Services\\LecturerService.cs",
               "ToolTip": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Services\\LecturerService.cs",
               "RelativeToolTip": "QuanLyLichHoc\\Services\\LecturerService.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAswHUAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAgwJoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T08:54:11.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LecturerControl.cs [Design]",
+              "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LecturerControl.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LecturerControl.cs",
+              "ToolTip": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LecturerControl.cs [Design]",
+              "RelativeToolTip": "QuanLyLichHoc\\Controls\\LecturerControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T08:24:12.018Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataClasses1.dbml",
+              "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Models\\DataClasses1.dbml",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Models\\DataClasses1.dbml",
+              "ToolTip": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Models\\DataClasses1.dbml",
+              "RelativeToolTip": "QuanLyLichHoc\\Models\\DataClasses1.dbml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
+              "WhenOpened": "2024-12-07T08:13:32.716Z",
               "EditorCaption": ""
             },
             {
@@ -150,39 +182,40 @@
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Forms\\UpdateLecturer\\UpdateLecturer.cs",
               "ToolTip": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Forms\\UpdateLecturer\\UpdateLecturer.cs",
               "RelativeToolTip": "QuanLyLichHoc\\Forms\\UpdateLecturer\\UpdateLecturer.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAgwFcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwDIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T16:48:54.582Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ILecturer.cs",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Interfaces\\ILecturer.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Interfaces\\ILecturer.cs",
               "ToolTip": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Interfaces\\ILecturer.cs",
               "RelativeToolTip": "QuanLyLichHoc\\Interfaces\\ILecturer.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAnwA4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T14:38:33.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LecturerControl.cs [Design]",
-              "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LecturerControl.cs",
-              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LecturerControl.cs",
-              "ToolTip": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LecturerControl.cs [Design]",
-              "RelativeToolTip": "QuanLyLichHoc\\Controls\\LecturerControl.cs [Design]",
+              "DocumentIndex": 7,
+              "Title": "LecturerControl.Designer.cs",
+              "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LecturerControl.Designer.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LecturerControl.Designer.cs",
+              "ToolTip": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LecturerControl.Designer.cs",
+              "RelativeToolTip": "QuanLyLichHoc\\Controls\\LecturerControl.Designer.cs",
+              "ViewState": "AgIAABMBAAAAAAAAAAAgwDgBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T08:24:12.018Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-07T18:59:58.86Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "MainForm.cs",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Views\\MainForm.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Views\\MainForm.cs",
@@ -190,40 +223,33 @@
               "RelativeToolTip": "QuanLyLichHoc\\Views\\MainForm.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAEwCAAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T06:41:11.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T06:41:11.399Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Views\\MainForm.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Views\\MainForm.cs",
               "ToolTip": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Views\\MainForm.cs [Design]",
               "RelativeToolTip": "QuanLyLichHoc\\Views\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T06:45:12.085Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-05T06:45:12.085Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
               "ToolTip": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Forms\\Login\\LoginForm.cs [Design]",
               "RelativeToolTip": "QuanLyLichHoc\\Forms\\Login\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:23:58.847Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "WhenOpened": "2024-12-05T07:23:58.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "UpdateLecturer.Designer.cs",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Forms\\UpdateLecturer\\UpdateLecturer.Designer.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Forms\\UpdateLecturer\\UpdateLecturer.Designer.cs",
@@ -236,19 +262,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "LessonControl.cs [Design]",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LessonControl.cs",
               "ToolTip": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.cs [Design]",
               "RelativeToolTip": "QuanLyLichHoc\\Controls\\LessonControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:19:46.88Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-05T07:19:46.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Program.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Program.cs",
@@ -256,12 +281,11 @@
               "RelativeToolTip": "QuanLyLichHoc\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T06:21:26.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T06:21:26.534Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "DataClasses1.designer.cs",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Models\\DataClasses1.designer.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Models\\DataClasses1.designer.cs",
@@ -274,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "LessonControl.Designer.cs",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.Designer.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LessonControl.Designer.cs",
@@ -282,24 +306,11 @@
               "RelativeToolTip": "QuanLyLichHoc\\Controls\\LessonControl.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:37:51.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T07:37:51.468Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DataClasses1.dbml",
-              "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Models\\DataClasses1.dbml",
-              "RelativeDocumentMoniker": "QuanLyLichHoc\\Models\\DataClasses1.dbml",
-              "ToolTip": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Models\\DataClasses1.dbml",
-              "RelativeToolTip": "QuanLyLichHoc\\Models\\DataClasses1.dbml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
-              "WhenOpened": "2024-12-07T08:13:32.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "LessonControl.cs",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LessonControl.cs",
@@ -307,12 +318,11 @@
               "RelativeToolTip": "QuanLyLichHoc\\Controls\\LessonControl.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:39:45.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T07:39:45.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
@@ -320,12 +330,11 @@
               "RelativeToolTip": "QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:27:44.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T07:27:44.361Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Shared.cs",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Utils\\Shared.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Utils\\Shared.cs",
@@ -333,12 +342,11 @@
               "RelativeToolTip": "QuanLyLichHoc\\Utils\\Shared.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:18:56.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T07:18:56.282Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "D:\\BTL\\Lesson-Management-System\\QuanLyLichHoc\\Views\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Views\\MainForm.Designer.cs",
@@ -346,8 +354,7 @@
               "RelativeToolTip": "QuanLyLichHoc\\Views\\MainForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T06:24:37.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T06:24:37.082Z"
             }
           ]
         }

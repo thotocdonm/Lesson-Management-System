@@ -11,11 +11,11 @@ namespace QuanLyLichHoc.Interfaces
     public interface ILecturer
     {
         List<LecturerService> LectureData();
-        List<Lecture> GetLecturer();
-        (List<Lecture> Lecturer, int totalLecturer, int TotalPages) GetLecturer(string search, int page, int pageSize);
-        Lecture GetLecturerById(int lectureId);
-        void EditLecturer(Lecture lecture);
-        void AddLecturer(Lecture lecture);
-        void DeleteLecturer(Lecture lecture);
+        List<Lecturer> GetLecturer();
+        (List<LecturerService> Lecturer, int totalLecturer, int TotalPages) GetLecturer(string search, int page, int pageSize);
+        Lecturer GetLecturerById(string lectureId);
+        void EditLecturer(Lecturer lecture);
+        void AddLecturer(Lecturer lecture);
+        void DeleteLecturer(Lecturer lecture);
     }
 }

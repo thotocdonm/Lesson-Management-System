@@ -20,27 +20,30 @@ namespace QuanLyLichHoc.Forms.UpdateLecturer
         private readonly ILecturer _editLecture;
         private string lectureId;
         private string lectureName;
-        private string lectureAddress;
+        private string lectureEmail;
         private string gender;
-        private string status;
-        public UpdateLecturer(string lectureId, string lectureName, string lectureAddress, string gender, string status)
+        private string phone;
+        private DateTime date;
+        public UpdateLecturer(string lectureId, string lectureName, string lectureEmail, string gender, string phone, DateTime date)
         {
             InitializeComponent();
             _editLecture = new LecturerService();
             this.lectureId = lectureId;
             this.lectureName = lectureName;
-            this.lectureAddress = lectureAddress;
+            this.lectureEmail = lectureEmail;
             this.gender = gender;
-            this.status = status;
+            this.phone = phone;
+            this.date = date;
         }
 
         private void UpdateLecturer_Load(object sender, EventArgs e)
         {
             text_lecture_id.Text = lectureId;
-            text_lecture_address.Text = lectureAddress;
+            text_lecture_email.Text = lectureEmail;
             text_lecture_name.Text = lectureName;
             comboBox_lecture_gender.Text = gender;
-            comboBox_lecture_status.Text = status;
+            text_lecture_phone.Text = phone;
+            dateTimeOBLecture.Value = date;
         }
 
         private void update_lecture_button_Click(object sender, EventArgs e)
@@ -62,26 +65,14 @@ namespace QuanLyLichHoc.Forms.UpdateLecturer
                     break;
             }
 
-            string status;
-            switch (comboBox_lecture_status.Text)
+            Models.Lecturer lecture = new Models.Lecturer
             {
-                case "Active":
-                    status = "Active";
-                    break;
-                case "Inactive":
-                    status = "Inactive";
-                    break;
-                default:
-                    status = "Active";
-                    break;
-            }
-            Models.Lecture lecture = new Models.Lecture
-            {
-                LectureID = int.Parse(text_lecture_id.Text),
-                LectureName = text_lecture_name.Text,
-                LectureGender = gender.ToString(),
-                LectureAddress = text_lecture_address.Text,
-                LectureStatus = status
+                lecturerId = text_lecture_id.Text,
+                lecturerName = text_lecture_name.Text,
+                lecturerGender = gender.ToString(),
+                lecturerEmail = text_lecture_email.Text,
+                lecturerPhone = text_lecture_phone.Text,
+                lecturerDob = dateTimeOBLecture.Value,
             };
 
             try

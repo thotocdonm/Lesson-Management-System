@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using QuanLyLichHoc.Interfaces;
 using QuanLyLichHoc.Forms.UpdateLecturer;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using QuanLyLichHoc.Models;
 
 
 namespace QuanLyLichHoc.Controls
@@ -19,7 +20,7 @@ namespace QuanLyLichHoc.Controls
     {
         private readonly ILecturer _lecturer;
         private int currentPage = 1;
-        private int pageSize = 10;
+        private int pageSize = 8;
         public LecturerControl()
         {
             InitializeComponent();
@@ -36,10 +37,29 @@ namespace QuanLyLichHoc.Controls
                 var displayLecturer = _lecturer.GetLecturer(search, currentPage, pageSize);
                 var allLecturer = displayLecturer.Lecturer;
                 var totalPage = displayLecturer.TotalPages;
+                var formattedLecturers = allLecturer.OrderBy(l => l.create_at).Select(lecturer => new
+                {
+                    lecturer.lecturerId,
+                    lecturer.lecturerName,
+                    lecturer.lecturerEmail,
+                    lecturer.lecturerPhone,
+                    LecturerGender = lecturer.lecturerGender == "M" ? "Male" :
+                                         lecturer.lecturerGender == "F" ? "Female" :
+                                         lecturer.lecturerGender == "O" ? "Other" :
+                                         "Unknown",
+                    LecturerDob = lecturer.lecturerDob?.ToString("dd/MM/yyyy")
+                }).ToList();
+                BindingSource bindingSource = new BindingSource();
+                bindingSource.DataSource = formattedLecturers;
                 dataGridView.Columns.Clear();
-                dataGridView.DataSource = allLecturer;
+                dataGridView.DataSource = bindingSource;
+                dataGridView.Columns["lecturerId"].Visible = false;
                 update_lecture_button.Visible=false;
                 delete_lecture_button.Visible= false;
+                PageOnPage.Text = $"{currentPage}/{totalPage}";
+
+                btn_Previous.Enabled = currentPage > 1;
+                btn_Next.Enabled = currentPage < totalPage;
             }
         }
 
@@ -65,41 +85,29 @@ namespace QuanLyLichHoc.Controls
 
         private void add_lecture_button_Click(object sender, EventArgs e)
         {
-            char gender;
+            string gender;
             switch (comboBox_lecture_gender.Text)
             {
                 case "Male":
-                    gender = 'M';
+                    gender = "M";
                     break;
                 case "Female":
-                    gender = 'F';
+                    gender = "F";
                     break;
                 case "Other":
-                    gender = 'O';
+                    gender = "O";
                     break;
                 default:
-                    gender = 'O';
+                    gender = "O";
                     break;
             }
-            string status;
-            switch (comboBox_lecture_status.Text)
+            Models.Lecturer lecture = new Models.Lecturer
             {
-                case "Active":
-                    status = "Active";
-                    break;
-                case "Inactive":
-                    status = "Inactive";
-                    break;
-                default:
-                    status = "Active";
-                    break;
-            }
-            Models.Lecture lecture = new Models.Lecture
-            {
-                LectureName = text_lecture_name.Text,
-                LectureGender = gender.ToString(),
-                LectureAddress = text_lecture_address.Text,
-                LectureStatus = status
+                lecturerName = text_lecture_name.Text,
+                lecturerGender = gender,
+                lecturerEmail = text_lecture_email.Text,
+                lecturerPhone = text_lecture_phone.Text,
+                lecturerDob = dateTimeOBLecture.Value,
             };
             try
             {
@@ -117,8 +125,9 @@ namespace QuanLyLichHoc.Controls
         private void ClearAddEployee()
         {
             text_lecture_name.Text = "";
-            text_lecture_address.Text = "";
-            comboBox_lecture_status.SelectedIndex = -1;
+            text_lecture_phone.Text = "";
+            text_lecture_email.Text = "";
+            text_lecture_email.Text = "";
             comboBox_lecture_gender.SelectedIndex = -1;
             //dtp_dateOfBirth.Value = DateTime.Now;
             //dtp_hireDate.Value = DateTime.Now;
@@ -128,13 +137,14 @@ namespace QuanLyLichHoc.Controls
         {
             if (row != null)
             {
-                string lectureId = row.Cells["LectureId"].Value?.ToString();
-                string lectureName = row.Cells["LectureName"].Value?.ToString();
-                string lectureAddress = row.Cells["LectureAddress"].Value?.ToString();
-                string gender = row.Cells["LectureGender"].Value?.ToString();
-                string status = row.Cells["LectureStatus"].Value?.ToString();
+                string lectureId = row.Cells["lecturerId"].Value?.ToString();
+                string lectureName = row.Cells["lecturerName"].Value?.ToString();
+                string lectureEmail = row.Cells["lecturerEmail"].Value?.ToString();
+                string gender = row.Cells["lecturerGender"].Value?.ToString();
+                string phone = row.Cells["lecturerPhone"].Value?.ToString();
+                DateTime date = DateTime.Parse(row.Cells["lecturerDob"].Value?.ToString());
 
-                UpdateLecturer updateLecturer = new UpdateLecturer(lectureId, lectureName, lectureAddress, gender, status);
+                UpdateLecturer updateLecturer = new UpdateLecturer(lectureId, lectureName, lectureEmail, gender, phone, date);
                 updateLecturer.StartPosition = FormStartPosition.Manual;
                 updateLecturer.Location = new Point(500, 200);
                 updateLecturer.LecturerUpdated += () =>
@@ -150,8 +160,8 @@ namespace QuanLyLichHoc.Controls
         {
             if(row != null)
             {
-                string lectureId = row.Cells["LectureId"].Value?.ToString();
-                Models.Lecture lecture = _lecturer.GetLecturerById(int.Parse(lectureId));
+                string lectureId = row.Cells["lecturerId"].Value?.ToString();
+                Models.Lecturer lecture = _lecturer.GetLecturerById(lectureId);
                 _lecturer.DeleteLecturer(lecture);
                 LoadLecturer();
             }
@@ -159,9 +169,62 @@ namespace QuanLyLichHoc.Controls
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
+            currentPage = 1;
             var dataSearch = _lecturer.GetLecturer(text_lecture_search.Text, currentPage, pageSize);
             var searchLecturer = dataSearch.Lecturer;
-            dataGridView.DataSource = searchLecturer;
+            var totalPage = dataSearch.TotalPages;
+            var formattedLecturers = searchLecturer.OrderBy(l => l.create_at).Select(lecturer => new
+            {
+                lecturer.lecturerId,
+                lecturer.lecturerName,
+                lecturer.lecturerEmail,
+                lecturer.lecturerPhone,
+                LecturerGender = lecturer.lecturerGender == "M" ? "Male" :
+                                         lecturer.lecturerGender == "F" ? "Female" :
+                                         lecturer.lecturerGender == "O" ? "Other" :
+                                         "Unknown",
+                LecturerDob = lecturer.lecturerDob?.ToString("dd/MM/yyyy")
+            }).ToList();
+            BindingSource bindingSource = new BindingSource();
+            bindingSource.DataSource = formattedLecturers;
+            dataGridView.Columns.Clear();
+            dataGridView.DataSource = bindingSource;
+            dataGridView.Columns["lecturerId"].Visible = false;
+            update_lecture_button.Visible = false;
+            delete_lecture_button.Visible = false;
+            PageOnPage.Text = $"{currentPage}/{totalPage}";
+
+            btn_Previous.Enabled = currentPage > 1;
+            btn_Next.Enabled = currentPage < totalPage;
+        }
+
+        private void btn_Next_Click(object sender, EventArgs e)
+        {
+            currentPage++;
+            LoadLecturer();
+        }
+
+        private void btn_Previous_Click(object sender, EventArgs e)
+        {
+            if (currentPage > 1)
+            {
+                currentPage--;
+                LoadLecturer();
+            }
+        }
+
+        private void dateTimeOBLecture_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clear_lecture_button_Click(object sender, EventArgs e)
+        {
+            text_lecture_email.Clear();
+            text_lecture_name.Clear();
+            text_lecture_phone.Clear();
+            text_lecture_search.Clear();
+            comboBox_lecture_gender.Items.Clear();
         }
     }
 }
