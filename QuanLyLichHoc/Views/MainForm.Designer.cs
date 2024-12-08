@@ -32,6 +32,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.HomeBtn = new System.Windows.Forms.Button();
+            this.SubjectsBtn = new System.Windows.Forms.Button();
+            this.StudentsBtn = new System.Windows.Forms.Button();
+            this.LecturerBtn = new System.Windows.Forms.Button();
+            this.LessonBtn = new System.Windows.Forms.Button();
+
             this.MainContent = new System.Windows.Forms.Panel();
             this.LessonBtn = new System.Windows.Forms.Button();
             this.LecturerBtn = new System.Windows.Forms.Button();
@@ -73,37 +81,76 @@
             // 
             // backgroundWorker1
             // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel2.AutoSize = true;
+            this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel2.Controls.Add(this.HomeBtn);
+            this.panel2.Controls.Add(this.SubjectsBtn);
+            this.panel2.Controls.Add(this.StudentsBtn);
+            this.panel2.Controls.Add(this.LecturerBtn);
+            this.panel2.Controls.Add(this.LessonBtn);
+            this.panel2.Location = new System.Drawing.Point(0, 115);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(266, 673);
+            this.panel2.TabIndex = 1;
             // 
-            // MainContent
+            // HomeBtn
             // 
-            this.MainContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MainContent.Location = new System.Drawing.Point(355, 142);
-            this.MainContent.Margin = new System.Windows.Forms.Padding(0);
-            this.MainContent.Name = "MainContent";
-            this.MainContent.Size = new System.Drawing.Size(1925, 828);
-            this.MainContent.TabIndex = 2;
-            this.MainContent.Paint += new System.Windows.Forms.PaintEventHandler(this.MainContent_Paint);
+            this.HomeBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.HomeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HomeBtn.FlatAppearance.BorderSize = 0;
+            this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeBtn.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeBtn.Image = ((System.Drawing.Image)(resources.GetObject("HomeBtn.Image")));
+            this.HomeBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HomeBtn.Location = new System.Drawing.Point(0, 24);
+            this.HomeBtn.Margin = new System.Windows.Forms.Padding(0, 0, 0, 32);
+            this.HomeBtn.Name = "HomeBtn";
+            this.HomeBtn.Size = new System.Drawing.Size(266, 66);
+            this.HomeBtn.TabIndex = 6;
+            this.HomeBtn.Text = "Trang chủ";
+            this.HomeBtn.UseVisualStyleBackColor = false;
+            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
+            // 
+            // SubjectsBtn
+            // 
+            this.SubjectsBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.SubjectsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SubjectsBtn.FlatAppearance.BorderSize = 0;
+            this.SubjectsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SubjectsBtn.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubjectsBtn.Image = ((System.Drawing.Image)(resources.GetObject("SubjectsBtn.Image")));
+            this.SubjectsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SubjectsBtn.Location = new System.Drawing.Point(0, 336);
+            this.SubjectsBtn.Margin = new System.Windows.Forms.Padding(0, 0, 0, 32);
+            this.SubjectsBtn.Name = "SubjectsBtn";
+            this.SubjectsBtn.Size = new System.Drawing.Size(266, 70);
+            this.SubjectsBtn.TabIndex = 4;
+            this.SubjectsBtn.Text = "Subjects";
+            this.SubjectsBtn.UseVisualStyleBackColor = false;
+            this.SubjectsBtn.Click += new System.EventHandler(this.SubjectsBtn_Click);
+
             // 
             // LessonBtn
             // 
-            this.LessonBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.LessonBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LessonBtn.FlatAppearance.BorderSize = 0;
-            this.LessonBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LessonBtn.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LessonBtn.Image = ((System.Drawing.Image)(resources.GetObject("LessonBtn.Image")));
-            this.LessonBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LessonBtn.Location = new System.Drawing.Point(0, 48);
-            this.LessonBtn.Margin = new System.Windows.Forms.Padding(0, 0, 0, 62);
-            this.LessonBtn.Name = "LessonBtn";
-            this.LessonBtn.Size = new System.Drawing.Size(355, 86);
-            this.LessonBtn.TabIndex = 2;
-            this.LessonBtn.Text = "Lesson";
-            this.LessonBtn.UseVisualStyleBackColor = false;
-            this.LessonBtn.Click += new System.EventHandler(this.LessonBtn_Click);
+
+            this.StudentsBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.StudentsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StudentsBtn.FlatAppearance.BorderSize = 0;
+            this.StudentsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StudentsBtn.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentsBtn.Image = ((System.Drawing.Image)(resources.GetObject("StudentsBtn.Image")));
+            this.StudentsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.StudentsBtn.Location = new System.Drawing.Point(0, 258);
+            this.StudentsBtn.Margin = new System.Windows.Forms.Padding(0, 0, 0, 32);
+            this.StudentsBtn.Name = "StudentsBtn";
+            this.StudentsBtn.Size = new System.Drawing.Size(266, 70);
+            this.StudentsBtn.TabIndex = 3;
+            this.StudentsBtn.Text = "Students";
+            this.StudentsBtn.UseVisualStyleBackColor = false;
             // 
             // LecturerBtn
             // 
@@ -114,8 +161,10 @@
             this.LecturerBtn.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LecturerBtn.Image = ((System.Drawing.Image)(resources.GetObject("LecturerBtn.Image")));
             this.LecturerBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LecturerBtn.Location = new System.Drawing.Point(0, 196);
-            this.LecturerBtn.Margin = new System.Windows.Forms.Padding(0, 0, 0, 62);
+
+            this.LecturerBtn.Location = new System.Drawing.Point(0, 180);
+            this.LecturerBtn.Margin = new System.Windows.Forms.Padding(0, 0, 0, 32);
+
             this.LecturerBtn.Name = "LecturerBtn";
             this.LecturerBtn.Size = new System.Drawing.Size(355, 86);
             this.LecturerBtn.TabIndex = 3;
@@ -125,21 +174,23 @@
             // 
             // StudentsBtn
             // 
-            this.StudentsBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.StudentsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StudentsBtn.FlatAppearance.BorderSize = 0;
-            this.StudentsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StudentsBtn.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentsBtn.Image = ((System.Drawing.Image)(resources.GetObject("StudentsBtn.Image")));
-            this.StudentsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.StudentsBtn.Location = new System.Drawing.Point(0, 343);
-            this.StudentsBtn.Margin = new System.Windows.Forms.Padding(0, 0, 0, 62);
-            this.StudentsBtn.Name = "StudentsBtn";
-            this.StudentsBtn.Size = new System.Drawing.Size(355, 86);
-            this.StudentsBtn.TabIndex = 3;
-            this.StudentsBtn.Text = "Students";
-            this.StudentsBtn.UseVisualStyleBackColor = false;
-            this.StudentsBtn.Click += new System.EventHandler(this.StudentsBtn_Click);
+
+            this.LessonBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.LessonBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LessonBtn.FlatAppearance.BorderSize = 0;
+            this.LessonBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LessonBtn.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LessonBtn.Image = ((System.Drawing.Image)(resources.GetObject("LessonBtn.Image")));
+            this.LessonBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LessonBtn.Location = new System.Drawing.Point(0, 102);
+            this.LessonBtn.Margin = new System.Windows.Forms.Padding(0, 0, 0, 32);
+            this.LessonBtn.Name = "LessonBtn";
+            this.LessonBtn.Size = new System.Drawing.Size(266, 70);
+            this.LessonBtn.TabIndex = 2;
+            this.LessonBtn.Text = "Lesson";
+            this.LessonBtn.UseVisualStyleBackColor = false;
+            this.LessonBtn.Click += new System.EventHandler(this.LessonBtn_Click);
+
             // 
             // SubjectsBtn
             // 
@@ -181,7 +232,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+
             this.ClientSize = new System.Drawing.Size(1540, 846);
+
             this.Controls.Add(this.MainContent);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -208,7 +261,12 @@
         private System.Windows.Forms.Button LecturerBtn;
         private System.Windows.Forms.Button StudentsBtn;
         private System.Windows.Forms.Button SubjectsBtn;
+
         private System.Windows.Forms.Panel panel2;
+
+        private System.Windows.Forms.Panel MainContent;
+        private System.Windows.Forms.Button HomeBtn;
+
     }
 }
 

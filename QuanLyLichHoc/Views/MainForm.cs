@@ -60,8 +60,28 @@ namespace QuanLyLichHoc
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+
+
+        private void SubjectsBtn_Click(object sender, EventArgs e)
+        {
+            SubjectControls control = new SubjectControls();
+
+            Shared.ShowMainContent(control, MainContent);
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void HomeBtn_Click(object sender, EventArgs e)
+        {
+            HomeControl control = new HomeControl();
+
+            Shared.ShowMainContent(control, MainContent);
+        }
+
+
     }
 }

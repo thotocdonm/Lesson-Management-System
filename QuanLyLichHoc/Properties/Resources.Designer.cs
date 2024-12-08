@@ -63,9 +63,27 @@ namespace QuanLyLichHoc.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+
         internal static System.Drawing.Bitmap icons8_teacher_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-teacher-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap mobile_password_forgot {
+            get {
+                object obj = ResourceManager.GetObject("mobile-password-forgot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Register {
+            get {
+                object obj = ResourceManager.GetObject("Register", resourceCulture);
+
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
