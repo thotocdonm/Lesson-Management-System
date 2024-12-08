@@ -1,8 +1,8 @@
-﻿using System;
+﻿using QuanLyLichHoc.Forms.Register;  // Thêm namespace Register để gọi Form đăng ký
+using QuanLyLichHoc.Models;
+using System;
 using System.Linq;
 using System.Windows.Forms;
-using QuanLyLichHoc.Forms.Register;  // Thêm namespace Register để gọi Form đăng ký
-using QuanLyLichHoc.Models;
 namespace QuanLyLichHoc.Forms.Login
 {
     public partial class LoginForm : Form
@@ -37,8 +37,9 @@ namespace QuanLyLichHoc.Forms.Login
 
 
                 // Chuye den ma hinh chinh
-                //  MainForm.Show();
-                // this.Hide(); // Ẩn form đăng nhập
+                MainForm main = new MainForm();
+                main.Show();
+                this.Hide(); // Ẩn form đăng nhập
             }
             else
             {

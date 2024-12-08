@@ -33,6 +33,10 @@ namespace QuanLyLichHoc
         {
             SubjectControls control = new SubjectControls();
 
+            Shared.ShowMainContent(control, MainContent);
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -49,6 +53,5 @@ namespace QuanLyLichHoc
         {
 
         }
-
     }
 }

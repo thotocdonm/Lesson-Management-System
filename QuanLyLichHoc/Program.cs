@@ -1,7 +1,4 @@
-
-﻿using QuanLyLichHoc.Controls;
-
-﻿using QuanLyLichHoc.Forms.Login;
+using QuanLyLichHoc.Forms.Login;
 
 using System;
 using System.Windows.Forms;

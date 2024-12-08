@@ -99,15 +99,11 @@
     <Compile Include="Controls\LessonControl.Designer.cs">
       <DependentUpon>LessonControl.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Controls\SubjectControls.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\SubjectControls.Designer.cs">
       <DependentUpon>SubjectControls.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Login\LoginForm.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Controls\Student\StudentInformationControl.cs">
       <SubType>UserControl</SubType>
@@ -115,9 +111,8 @@
     <Compile Include="Controls\Student\StudentInformationControl.Designer.cs">
       <DependentUpon>StudentInformationControl.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Forms\LoginForm.cs">
-
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Controls\HomeControl.cs">
       <SubType>UserControl</SubType>
@@ -134,7 +129,6 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Models\DataClasses1.cs">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
@@ -143,18 +137,15 @@
     </Compile>
     <Compile Include="Forms\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
-
     </Compile>
     <Compile Include="Models\DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
-
     <Compile Include="Services\EnumErrCodeService.cs" />
     <Compile Include="Services\FunctionResultService.cs" />
     <Compile Include="Services\SubjectService.cs" />
-
     <Compile Include="Utils\Shared.cs" />
     <Compile Include="Views\StudentForm.cs">
       <SubType>Form</SubType>
@@ -179,17 +170,13 @@
     <EmbeddedResource Include="Controls\LessonControl.resx">
       <DependentUpon>LessonControl.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Controls\SubjectControls.resx">
       <DependentUpon>SubjectControls.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Login\LoginForm.resx">
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Student\StudentInformationControl.resx">
       <DependentUpon>StudentInformationControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
-
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegisterForm.resx">
@@ -208,11 +195,9 @@
     <EmbeddedResource Include="Views\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Views\StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
     </EmbeddedResource>
-
     <None Include="Models\DataClasses1.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
@@ -236,14 +221,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-
-    <Folder Include="Resources\" />
+    <Folder Include="Forms\Login\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
-
-    <Folder Include="Services\" />
-
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
@@ -253,4 +234,8 @@
     <Content Include="Resources\Register.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
 </Project>
