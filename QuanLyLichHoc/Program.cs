@@ -1,5 +1,4 @@
 ﻿using QuanLyLichHoc.Forms.Login;
-using QuanLyLichHoc.Views;
 using System;
 using System.Windows.Forms;
 
@@ -19,7 +18,7 @@ namespace QuanLyLichHoc
 
             Application.Run(new LoginForm());
 
-      
+
 
         }
     }
