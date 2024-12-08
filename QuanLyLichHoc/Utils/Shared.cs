@@ -15,8 +15,8 @@ namespace QuanLyLichHoc.Utils
             control.AutoSize = true; // Ensure the control respects its size
 
             // Align the control to the center of the parent panel
-            control.Left = (panel.Width - control.Width) / 2;
-            control.Top = (panel.Height - control.Height) / 2;
+            //control.Left = (panel.Width - control.Width) / 2;
+            //control.Top = (panel.Height - control.Height) / 2;
 
             // Add the control to the panel
             panel.Controls.Add(control);
