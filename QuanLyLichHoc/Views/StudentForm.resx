@@ -117,11 +117,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="mobile-password-forgot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mobile-password-forgot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="SubjectsBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DwAACw8BkvkDpQAAAVVJREFUaEPtmk1qAkEQhWchBDGBCC4ET5Ab5Ai6CuQeusnCM3gnD2Agi+yyyCKQ
+        HMFkk42+JykYxGmmi5Q9JfXBBzPdU9U85mfTUwUOuYJzuIHfcFdYFRP4Ck81LGU2vBMS4g0+wBtYCnWQ
+        BZQQtxwojDrIM2Qh70QXUAfZQhaWfJzqqIOoC40wCTKFX1Cu+U8/IfsfI/PZpAq5mMxbyP7HyFw2qUJ1
+        0xY09VavmSpUN21BU2/1mqlCddMWNPVWr5kqVDdtQVNv9Zqpwot52fl5tArDvmf7/JYggkQQIyJIBDEi
+        gkQQIyJIBDEigkQQIyJIBDEigkjhNVzCF/jzN1bSbKTwo3bcBbOpF3MjdAZH0B0SYg17HPCKBLk7nDnm
+        FzIId3dd8w4Z5P5w5pgVZBDutfc54JUhlH1C7rU/wjF0CV90ecS6opoBfIL8gcDtTzXBeamqPTn+3S5x
+        OBwpAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="Register" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Register.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="StudentsBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
 </root>
