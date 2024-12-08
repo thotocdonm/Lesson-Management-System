@@ -51,7 +51,7 @@ namespace QuanLyLichHoc.Models
     #endregion
 		
 		public DataClasses1DataContext() : 
-				base(global::QuanLyLichHoc.Properties.Settings.Default.Lesson_Management_SystemConnectionString, mappingSource)
+				base(global::QuanLyLichHoc.Properties.Settings.Default.Lesson_Management_SystemConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -143,6 +143,8 @@ namespace QuanLyLichHoc.Models
 		
 		private System.Nullable<System.DateTime> _enrolledAt;
 		
+		private System.Nullable<System.DateTime> _createAt;
+		
 		private System.Nullable<int> _isDeleted;
 		
 		private EntityRef<Student> _Student;
@@ -161,6 +163,8 @@ namespace QuanLyLichHoc.Models
     partial void OnsubjectIdChanged();
     partial void OnenrolledAtChanging(System.Nullable<System.DateTime> value);
     partial void OnenrolledAtChanged();
+    partial void OncreateAtChanging(System.Nullable<System.DateTime> value);
+    partial void OncreateAtChanged();
     partial void OnisDeletedChanging(System.Nullable<int> value);
     partial void OnisDeletedChanged();
     #endregion
@@ -256,6 +260,26 @@ namespace QuanLyLichHoc.Models
 					this._enrolledAt = value;
 					this.SendPropertyChanged("enrolledAt");
 					this.OnenrolledAtChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_createAt", DbType="DateTime")]
+		public System.Nullable<System.DateTime> createAt
+		{
+			get
+			{
+				return this._createAt;
+			}
+			set
+			{
+				if ((this._createAt != value))
+				{
+					this.OncreateAtChanging(value);
+					this.SendPropertyChanging();
+					this._createAt = value;
+					this.SendPropertyChanged("createAt");
+					this.OncreateAtChanged();
 				}
 			}
 		}
@@ -389,6 +413,8 @@ namespace QuanLyLichHoc.Models
 		
 		private string _lecturerPhone;
 		
+		private System.Nullable<System.DateTime> _createAt;
+		
 		private System.Nullable<int> _isDeleted;
 		
 		private EntitySet<Lesson> _Lessons;
@@ -413,6 +439,8 @@ namespace QuanLyLichHoc.Models
     partial void OnlecturerGenderChanged();
     partial void OnlecturerPhoneChanging(string value);
     partial void OnlecturerPhoneChanged();
+    partial void OncreateAtChanging(System.Nullable<System.DateTime> value);
+    partial void OncreateAtChanged();
     partial void OnisDeletedChanging(System.Nullable<int> value);
     partial void OnisDeletedChanged();
     #endregion
@@ -568,6 +596,26 @@ namespace QuanLyLichHoc.Models
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_createAt", DbType="DateTime")]
+		public System.Nullable<System.DateTime> createAt
+		{
+			get
+			{
+				return this._createAt;
+			}
+			set
+			{
+				if ((this._createAt != value))
+				{
+					this.OncreateAtChanging(value);
+					this.SendPropertyChanging();
+					this._createAt = value;
+					this.SendPropertyChanged("createAt");
+					this.OncreateAtChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isDeleted", DbType="Int")]
 		public System.Nullable<int> isDeleted
 		{
@@ -686,6 +734,8 @@ namespace QuanLyLichHoc.Models
 		
 		private string _subjectId;
 		
+		private System.Nullable<System.DateTime> _createAt;
+		
 		private System.Nullable<int> _isDeleted;
 		
 		private EntityRef<Lecturer> _Lecturer;
@@ -708,6 +758,8 @@ namespace QuanLyLichHoc.Models
     partial void OnlecturerIdChanged();
     partial void OnsubjectIdChanging(string value);
     partial void OnsubjectIdChanged();
+    partial void OncreateAtChanging(System.Nullable<System.DateTime> value);
+    partial void OncreateAtChanged();
     partial void OnisDeletedChanging(System.Nullable<int> value);
     partial void OnisDeletedChanged();
     #endregion
@@ -847,6 +899,26 @@ namespace QuanLyLichHoc.Models
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_createAt", DbType="DateTime")]
+		public System.Nullable<System.DateTime> createAt
+		{
+			get
+			{
+				return this._createAt;
+			}
+			set
+			{
+				if ((this._createAt != value))
+				{
+					this.OncreateAtChanging(value);
+					this.SendPropertyChanging();
+					this._createAt = value;
+					this.SendPropertyChanged("createAt");
+					this.OncreateAtChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isDeleted", DbType="Int")]
 		public System.Nullable<int> isDeleted
 		{
@@ -976,6 +1048,8 @@ namespace QuanLyLichHoc.Models
 		
 		private string _studentPhone;
 		
+		private System.Nullable<System.DateTime> _createAt;
+		
 		private System.Nullable<int> _isDeleted;
 		
 		private EntitySet<Enrollment> _Enrollments;
@@ -1000,6 +1074,8 @@ namespace QuanLyLichHoc.Models
     partial void OnstudentGenderChanged();
     partial void OnstudentPhoneChanging(string value);
     partial void OnstudentPhoneChanged();
+    partial void OncreateAtChanging(System.Nullable<System.DateTime> value);
+    partial void OncreateAtChanged();
     partial void OnisDeletedChanging(System.Nullable<int> value);
     partial void OnisDeletedChanged();
     #endregion
@@ -1155,6 +1231,26 @@ namespace QuanLyLichHoc.Models
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_createAt", DbType="DateTime")]
+		public System.Nullable<System.DateTime> createAt
+		{
+			get
+			{
+				return this._createAt;
+			}
+			set
+			{
+				if ((this._createAt != value))
+				{
+					this.OncreateAtChanging(value);
+					this.SendPropertyChanging();
+					this._createAt = value;
+					this.SendPropertyChanged("createAt");
+					this.OncreateAtChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isDeleted", DbType="Int")]
 		public System.Nullable<int> isDeleted
 		{
@@ -1267,6 +1363,8 @@ namespace QuanLyLichHoc.Models
 		
 		private System.Nullable<int> _creditHours;
 		
+		private System.Nullable<System.DateTime> _createAt;
+		
 		private System.Nullable<int> _isDeleted;
 		
 		private EntitySet<Enrollment> _Enrollments;
@@ -1283,6 +1381,8 @@ namespace QuanLyLichHoc.Models
     partial void OnsubjectNameChanged();
     partial void OncreditHoursChanging(System.Nullable<int> value);
     partial void OncreditHoursChanged();
+    partial void OncreateAtChanging(System.Nullable<System.DateTime> value);
+    partial void OncreateAtChanged();
     partial void OnisDeletedChanging(System.Nullable<int> value);
     partial void OnisDeletedChanged();
     #endregion
@@ -1350,6 +1450,26 @@ namespace QuanLyLichHoc.Models
 					this._creditHours = value;
 					this.SendPropertyChanged("creditHours");
 					this.OncreditHoursChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_createAt", DbType="DateTime")]
+		public System.Nullable<System.DateTime> createAt
+		{
+			get
+			{
+				return this._createAt;
+			}
+			set
+			{
+				if ((this._createAt != value))
+				{
+					this.OncreateAtChanging(value);
+					this.SendPropertyChanging();
+					this._createAt = value;
+					this.SendPropertyChanged("createAt");
+					this.OncreateAtChanged();
 				}
 			}
 		}
@@ -1461,6 +1581,8 @@ namespace QuanLyLichHoc.Models
 		
 		private string _email;
 		
+		private System.Nullable<System.DateTime> _createAt;
+		
 		private System.Nullable<int> _isDeleted;
 		
 		private EntitySet<Lecturer> _Lecturers;
@@ -1481,6 +1603,8 @@ namespace QuanLyLichHoc.Models
     partial void OnroleChanged();
     partial void OnemailChanging(string value);
     partial void OnemailChanged();
+    partial void OncreateAtChanging(System.Nullable<System.DateTime> value);
+    partial void OncreateAtChanged();
     partial void OnisDeletedChanging(System.Nullable<int> value);
     partial void OnisDeletedChanged();
     #endregion
@@ -1588,6 +1712,26 @@ namespace QuanLyLichHoc.Models
 					this._email = value;
 					this.SendPropertyChanged("email");
 					this.OnemailChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_createAt", DbType="DateTime")]
+		public System.Nullable<System.DateTime> createAt
+		{
+			get
+			{
+				return this._createAt;
+			}
+			set
+			{
+				if ((this._createAt != value))
+				{
+					this.OncreateAtChanging(value);
+					this.SendPropertyChanging();
+					this._createAt = value;
+					this.SendPropertyChanged("createAt");
+					this.OncreateAtChanged();
 				}
 			}
 		}
