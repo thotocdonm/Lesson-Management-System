@@ -16,5 +16,11 @@ namespace QuanLyLichHoc.Views
             StudentInformationControl control = new StudentInformationControl();
             Shared.ShowMainContent(control, MainContent);
         }
+
+        private void SubjectsBtn_Click(object sender, System.EventArgs e)
+        {
+            SubjectEnrollmentControl control = new SubjectEnrollmentControl();
+            Shared.ShowMainContent(control, MainContent);
+        }
     }
 }

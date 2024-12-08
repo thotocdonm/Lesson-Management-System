@@ -16,6 +16,9 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+# Ignore the bin and obj directories in QuanLyLichHoc
+QuanLyLichHoc/bin/
+QuanLyLichHoc/obj/
 # Mono auto generated files
 mono_crash.*
 
@@ -37,6 +40,7 @@ bld/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
+
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
 

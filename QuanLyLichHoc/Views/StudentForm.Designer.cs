@@ -35,6 +35,7 @@
             this.SubjectsBtn = new System.Windows.Forms.Button();
             this.StudentsBtn = new System.Windows.Forms.Button();
             this.MainContent = new System.Windows.Forms.Panel();
+            this.SchedulesBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +69,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel2.AutoSize = true;
             this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel2.Controls.Add(this.SchedulesBtn);
             this.panel2.Controls.Add(this.SubjectsBtn);
             this.panel2.Controls.Add(this.StudentsBtn);
             this.panel2.Location = new System.Drawing.Point(0, 109);
@@ -92,6 +94,7 @@
             this.SubjectsBtn.TabIndex = 4;
             this.SubjectsBtn.Text = "Subjects Enrollment";
             this.SubjectsBtn.UseVisualStyleBackColor = false;
+            this.SubjectsBtn.Click += new System.EventHandler(this.SubjectsBtn_Click);
             // 
             // StudentsBtn
             // 
@@ -121,6 +124,23 @@
             this.MainContent.Size = new System.Drawing.Size(1069, 596);
             this.MainContent.TabIndex = 3;
             // 
+            // SchedulesBtn
+            // 
+            this.SchedulesBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.SchedulesBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SchedulesBtn.FlatAppearance.BorderSize = 0;
+            this.SchedulesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SchedulesBtn.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SchedulesBtn.Image = ((System.Drawing.Image)(resources.GetObject("SchedulesBtn.Image")));
+            this.SchedulesBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SchedulesBtn.Location = new System.Drawing.Point(0, 286);
+            this.SchedulesBtn.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
+            this.SchedulesBtn.Name = "SchedulesBtn";
+            this.SchedulesBtn.Size = new System.Drawing.Size(266, 70);
+            this.SchedulesBtn.TabIndex = 5;
+            this.SchedulesBtn.Text = "Schedules";
+            this.SchedulesBtn.UseVisualStyleBackColor = false;
+            // 
             // StudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,5 +168,6 @@
         private System.Windows.Forms.Button SubjectsBtn;
         private System.Windows.Forms.Button StudentsBtn;
         private System.Windows.Forms.Panel MainContent;
+        private System.Windows.Forms.Button SchedulesBtn;
     }
 }

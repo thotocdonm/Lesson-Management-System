@@ -105,17 +105,29 @@
     <Compile Include="Controls\Student\StudentInformationControl.Designer.cs">
       <DependentUpon>StudentInformationControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Student\SubjectEnrollmentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Student\SubjectEnrollmentControl.Designer.cs">
+      <DependentUpon>SubjectEnrollmentControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Login\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lesson_Management_SystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lesson_Management_SystemDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Models\DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Services\SubjectEnrollmentService.cs" />
     <Compile Include="Utils\Shared.cs" />
     <Compile Include="Views\StudentForm.cs">
       <SubType>Form</SubType>
@@ -137,6 +149,9 @@
     <EmbeddedResource Include="Controls\Student\StudentInformationControl.resx">
       <DependentUpon>StudentInformationControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Student\SubjectEnrollmentControl.resx">
+      <DependentUpon>SubjectEnrollmentControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +170,17 @@
     <EmbeddedResource Include="Views\StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Lesson_Management_SystemDataSet.xsc">
+      <DependentUpon>Lesson_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Lesson_Management_SystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lesson_Management_SystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lesson_Management_SystemDataSet.xss">
+      <DependentUpon>Lesson_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Models\DataClasses1.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
@@ -179,7 +205,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
