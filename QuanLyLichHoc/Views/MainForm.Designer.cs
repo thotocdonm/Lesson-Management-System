@@ -103,6 +103,7 @@
             this.SubjectsBtn.TabIndex = 4;
             this.SubjectsBtn.Text = "Subjects";
             this.SubjectsBtn.UseVisualStyleBackColor = false;
+            this.SubjectsBtn.Click += new System.EventHandler(this.SubjectsBtn_Click);
             // 
             // StudentsBtn
             // 
@@ -137,6 +138,7 @@
             this.LecturerBtn.TabIndex = 3;
             this.LecturerBtn.Text = "Lecturers";
             this.LecturerBtn.UseVisualStyleBackColor = false;
+            this.LecturerBtn.Click += new System.EventHandler(this.LecturerBtn_Click);
             // 
             // LessonBtn
             // 

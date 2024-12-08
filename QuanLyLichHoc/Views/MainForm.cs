@@ -38,5 +38,15 @@ namespace QuanLyLichHoc
             HomeControl control = new HomeControl();
             Shared.ShowMainContent(control, MainContent);
         }
+
+        private void LecturerBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubjectsBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
