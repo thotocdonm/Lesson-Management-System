@@ -1,5 +1,4 @@
-﻿using QuanLyLichHoc.Forms.RoleLecturer;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace QuanLyLichHoc
@@ -15,7 +14,7 @@ namespace QuanLyLichHoc
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new LoginForm());
-            Application.Run(new RoleLecturerForm());
+            Application.Run(new MainForm());
         }
     }
 }

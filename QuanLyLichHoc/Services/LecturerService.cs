@@ -1,14 +1,12 @@
-﻿using System;
+﻿using QuanLyLichHoc.Interfaces;
+using QuanLyLichHoc.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using QuanLyLichHoc.Models;
-using QuanLyLichHoc.Interfaces;
 
 namespace QuanLyLichHoc.Services
 {
-    public class LecturerService: ILecturer
+    public class LecturerService : ILecturer
     {
         public string lecturerId { get; set; }
         public string lecturerName { get; set; }
@@ -73,7 +71,7 @@ namespace QuanLyLichHoc.Services
             {
                 lecture.lecturerId = Guid.NewGuid().ToString().Substring(0, 20);
                 lecture.isDeleted = 0;
-                lecture.create_at = DateTime.Now;
+                lecture.createAt = DateTime.Now;
                 db.Lecturers.InsertOnSubmit(lecture);
                 db.SubmitChanges();
             }
@@ -139,7 +137,7 @@ namespace QuanLyLichHoc.Services
                     var totalPages = (int)Math.Ceiling((double)totalEmployees / pageSize);
 
                     var lecturers = query
-                        .OrderBy(o => o.create_at)
+                        .OrderBy(o => o.createAt)
                         .Skip((page - 1) * pageSize)
                         .Take(pageSize)
                         .Select(o => new LecturerService
@@ -150,7 +148,7 @@ namespace QuanLyLichHoc.Services
                             lecturerPhone = o.lecturerPhone,
                             lecturerGender = o.lecturerGender,
                             lecturerDob = o.lecturerDob,
-                            create_at = o.create_at,
+                            create_at = o.createAt,
                         })
                         .ToList();
 

@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using QuanLyLichHoc.Forms.UpdateLecturer;
+using QuanLyLichHoc.Interfaces;
+using QuanLyLichHoc.Services;
+using System;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using QuanLyLichHoc.Services;
 using System.Windows.Forms;
-using QuanLyLichHoc.Interfaces;
-using QuanLyLichHoc.Forms.UpdateLecturer;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using QuanLyLichHoc.Models;
 
 
 namespace QuanLyLichHoc.Controls
@@ -54,8 +48,8 @@ namespace QuanLyLichHoc.Controls
                 dataGridView.Columns.Clear();
                 dataGridView.DataSource = bindingSource;
                 dataGridView.Columns["lecturerId"].Visible = false;
-                update_lecture_button.Visible=false;
-                delete_lecture_button.Visible= false;
+                update_lecture_button.Visible = false;
+                delete_lecture_button.Visible = false;
                 PageOnPage.Text = $"{currentPage}/{totalPage}";
 
                 btn_Previous.Enabled = currentPage > 1;
@@ -81,7 +75,7 @@ namespace QuanLyLichHoc.Controls
             dataGridView.DataSource = lectureatr.LectureData();
             dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
-        
+
 
         private void add_lecture_button_Click(object sender, EventArgs e)
         {
@@ -153,12 +147,12 @@ namespace QuanLyLichHoc.Controls
                 };
                 updateLecturer.Show();
             }
-            
+
         }
 
         private void delete_lecture_button_Click(object sender, EventArgs e)
         {
-            if(row != null)
+            if (row != null)
             {
                 string lectureId = row.Cells["lecturerId"].Value?.ToString();
                 Models.Lecturer lecture = _lecturer.GetLecturerById(lectureId);
