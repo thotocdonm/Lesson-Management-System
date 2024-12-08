@@ -1,45 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\",
+  "WorkspaceRootPath": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\quanlylichhoc\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|c:\\users\\admin\\source\\repos\\quanlylichhoc\\quanlylichhoc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\quanlylichhoc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\quanlylichhoc\\utils\\shared.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\utils\\shared.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|c:\\users\\hoang\\source\\repos\\qllichhoc\\lesson-management-system\\quanlylichhoc\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\quanlylichhoc\\forms\\login\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\forms\\login\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\quanlylichhoc\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\quanlylichhoc\\views\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\quanlylichhoc\\views\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\views\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\quanlylichhoc\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|c:\\users\\hoang\\source\\repos\\qllichhoc\\lesson-management-system\\quanlylichhoc\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|c:\\users\\hoang\\source\\repos\\qllichhoc\\lesson-management-system\\quanlylichhoc\\services\\functionresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\services\\functionresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|c:\\users\\hoang\\source\\repos\\qllichhoc\\lesson-management-system\\quanlylichhoc\\services\\enumerrcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\services\\enumerrcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\quanlylichhoc\\controls\\subjectcontrols.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\subjectcontrols.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\quanlylichhoc\\utils\\shared.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\utils\\shared.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\quanlylichhoc\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|c:\\users\\hoang\\source\\repos\\qllichhoc\\lesson-management-system\\quanlylichhoc\\controls\\subjectcontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\subjectcontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\quanlylichhoc\\controls\\subjectcontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\subjectcontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\quanlylichhoc\\controls\\lessoncontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\quanlylichhoc\\forms\\login\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\forms\\login\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\quanlylichhoc\\controls\\lessoncontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\lessoncontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\quanlylichhoc\\forms\\login\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\quanlylichhoc\\forms\\login\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\forms\\login\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,29 +78,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\App.config",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\App.config",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\App.config",
+              "RelativeToolTip": "QuanLyLichHoc\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-08T07:25:51.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FunctionResultService.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Services\\FunctionResultService.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Services\\FunctionResultService.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Services\\FunctionResultService.cs",
+              "RelativeToolTip": "QuanLyLichHoc\\Services\\FunctionResultService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T04:52:46.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SubjectService.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Services\\SubjectService.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Services\\SubjectService.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Services\\SubjectService.cs",
+              "RelativeToolTip": "QuanLyLichHoc\\Services\\SubjectService.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAAAKsAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T04:43:22.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Views\\MainForm.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Views\\MainForm.cs [Design]",
+              "RelativeToolTip": "QuanLyLichHoc\\Views\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T06:45:12.085Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Views\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Views\\MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Views\\MainForm.Designer.cs",
+              "RelativeToolTip": "QuanLyLichHoc\\Views\\MainForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T06:24:37.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Program.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Program.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Program.cs",
               "RelativeToolTip": "QuanLyLichHoc\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T06:21:26.534Z",
               "EditorCaption": ""
@@ -83,111 +163,141 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LessonControl.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Controls\\LessonControl.cs",
-              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LessonControl.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Controls\\LessonControl.cs",
-              "RelativeToolTip": "QuanLyLichHoc\\Controls\\LessonControl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "EnumErrCodeService.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Services\\EnumErrCodeService.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Services\\EnumErrCodeService.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Services\\EnumErrCodeService.cs",
+              "RelativeToolTip": "QuanLyLichHoc\\Services\\EnumErrCodeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:39:45.121Z"
+              "WhenOpened": "2024-12-08T04:53:21.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "LessonControl.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Controls\\LessonControl.Designer.cs",
-              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LessonControl.Designer.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Controls\\LessonControl.Designer.cs",
-              "RelativeToolTip": "QuanLyLichHoc\\Controls\\LessonControl.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Shared.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Utils\\Shared.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Utils\\Shared.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Utils\\Shared.cs",
+              "RelativeToolTip": "QuanLyLichHoc\\Utils\\Shared.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:37:51.468Z"
+              "WhenOpened": "2024-12-05T07:18:56.282Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
-              "RelativeDocumentMoniker": "QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
-              "RelativeToolTip": "QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:27:44.361Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
-              "RelativeDocumentMoniker": "QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Forms\\Login\\LoginForm.cs [Design]",
-              "RelativeToolTip": "QuanLyLichHoc\\Forms\\Login\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:23:58.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LessonControl.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Controls\\LessonControl.cs",
-              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LessonControl.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Controls\\LessonControl.cs [Design]",
-              "RelativeToolTip": "QuanLyLichHoc\\Controls\\LessonControl.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:19:46.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Shared.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Utils\\Shared.cs",
-              "RelativeDocumentMoniker": "QuanLyLichHoc\\Utils\\Shared.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Utils\\Shared.cs",
-              "RelativeToolTip": "QuanLyLichHoc\\Utils\\Shared.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:18:56.282Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Views\\MainForm.cs",
-              "RelativeDocumentMoniker": "QuanLyLichHoc\\Views\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Views\\MainForm.cs [Design]",
-              "RelativeToolTip": "QuanLyLichHoc\\Views\\MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T06:45:12.085Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Views\\MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Views\\MainForm.cs",
               "RelativeDocumentMoniker": "QuanLyLichHoc\\Views\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Views\\MainForm.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Views\\MainForm.cs",
               "RelativeToolTip": "QuanLyLichHoc\\Views\\MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T06:41:11.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Views\\MainForm.Designer.cs",
-              "RelativeDocumentMoniker": "QuanLyLichHoc\\Views\\MainForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\QuanLyLichHoc\\QuanLyLichHoc\\Views\\MainForm.Designer.cs",
-              "RelativeToolTip": "QuanLyLichHoc\\Views\\MainForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "SubjectControls.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\SubjectControls.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\SubjectControls.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\SubjectControls.cs [Design]",
+              "RelativeToolTip": "QuanLyLichHoc\\Controls\\SubjectControls.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T06:24:37.082Z",
+              "WhenOpened": "2024-12-07T06:02:44.676Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SubjectControls.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\SubjectControls.Designer.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\SubjectControls.Designer.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\SubjectControls.Designer.cs",
+              "RelativeToolTip": "QuanLyLichHoc\\Controls\\SubjectControls.Designer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T08:40:59.093Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SubjectControls.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\SubjectControls.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\SubjectControls.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\SubjectControls.cs",
+              "RelativeToolTip": "QuanLyLichHoc\\Controls\\SubjectControls.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwA4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T06:03:14.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LessonControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LessonControl.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.cs [Design]",
+              "RelativeToolTip": "QuanLyLichHoc\\Controls\\LessonControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T07:19:46.88Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LessonControl.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LessonControl.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.cs",
+              "RelativeToolTip": "QuanLyLichHoc\\Controls\\LessonControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T07:39:45.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Forms\\Login\\LoginForm.cs [Design]",
+              "RelativeToolTip": "QuanLyLichHoc\\Forms\\Login\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T07:23:58.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LessonControl.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.Designer.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LessonControl.Designer.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.Designer.cs",
+              "RelativeToolTip": "QuanLyLichHoc\\Controls\\LessonControl.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T07:37:51.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\hoang\\source\\repos\\QLLICHHOC\\Lesson-Management-System\\QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
+              "RelativeToolTip": "QuanLyLichHoc\\Forms\\Login\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T07:27:44.361Z"
             }
           ]
         }
