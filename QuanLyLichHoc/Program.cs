@@ -1,4 +1,5 @@
-﻿using QuanLyLichHoc.Views;
+using QuanLyLichHoc.Forms.Login;
+
 using System;
 using System.Windows.Forms;
 
@@ -15,7 +16,11 @@ namespace QuanLyLichHoc
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new LoginForm());
-            Application.Run(new MainForm());
+
+            Application.Run(new LoginForm());
+
+
+
         }
     }
 }

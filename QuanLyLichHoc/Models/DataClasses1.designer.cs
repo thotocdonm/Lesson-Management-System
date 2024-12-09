@@ -51,7 +51,9 @@ namespace QuanLyLichHoc.Models
     #endregion
 		
 		public DataClasses1DataContext() : 
+
 				base(global::QuanLyLichHoc.Properties.Settings.Default.Lesson_Management_SystemConnectionString1, mappingSource)
+
 		{
 			OnCreated();
 		}

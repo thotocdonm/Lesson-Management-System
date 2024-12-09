@@ -86,6 +86,7 @@ namespace QuanLyLichHoc.Controls
 
         }
 
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -336,5 +337,6 @@ namespace QuanLyLichHoc.Controls
                 LoadLesson();
             }
         }
+
     }
 }
