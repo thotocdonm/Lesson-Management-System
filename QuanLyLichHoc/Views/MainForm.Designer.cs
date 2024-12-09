@@ -88,6 +88,7 @@
             this.panel2.Size = new System.Drawing.Size(266, 673);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+
             // 
             // HomeBtn
             // 
@@ -105,6 +106,7 @@
             this.HomeBtn.Text = "Trang chủ";
             this.HomeBtn.UseVisualStyleBackColor = false;
             this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
+
             // 
             // SubjectsBtn
             // 
@@ -140,6 +142,7 @@
             this.StudentsBtn.TabIndex = 3;
             this.StudentsBtn.Text = "Students";
             this.StudentsBtn.UseVisualStyleBackColor = false;
+            this.StudentsBtn.Click += new System.EventHandler(this.StudentsBtn_Click);
             // 
             // LecturerBtn
             // 
@@ -182,8 +185,11 @@
             this.MainContent.Location = new System.Drawing.Point(268, 117);
             this.MainContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MainContent.Name = "MainContent";
-            this.MainContent.Size = new System.Drawing.Size(1488, 769);
-            this.MainContent.TabIndex = 0;
+
+            this.MainContent.Size = new System.Drawing.Size(1444, 673);
+            this.MainContent.TabIndex = 2;
+            this.MainContent.Paint += new System.Windows.Forms.PaintEventHandler(this.MainContent_Paint);
+
             // 
             // MainForm
             // 

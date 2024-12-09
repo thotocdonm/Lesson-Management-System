@@ -1,0 +1,17 @@
+# Bỏ qua thư mục .vs
+.vs/
+
+# Bỏ qua các thư mục bin và obj
+bin/
+obj/
+
+# Bỏ qua các tệp tạm thời của Visual Studio
+*.user
+*.suo
+*.log
+*.obj
+*.exe
+*.dll
+*.cache
+*.pdb
+*.tmp

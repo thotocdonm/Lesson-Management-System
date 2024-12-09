@@ -20,6 +20,7 @@ namespace QuanLyLichHoc.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
+
             }
         }
         
@@ -47,6 +48,18 @@ namespace QuanLyLichHoc.Properties {
             get {
                 return ((string)(this["Lesson_Management_SystemConnectionString1"]));
 
+
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-H3FAVBH;Initial Catalog=Lesson_Management_System;Integrated S" +
+            "ecurity=True;TrustServerCertificate=True")]
+        public string Lesson_Management_SystemConnectionString {
+            get {
+                return ((string)(this["Lesson_Management_SystemConnectionString"]));
             }
         }
     }

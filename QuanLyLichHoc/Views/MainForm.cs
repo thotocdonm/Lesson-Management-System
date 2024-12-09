@@ -28,6 +28,15 @@ namespace QuanLyLichHoc
             Shared.ShowMainContent(control, MainContent);
         }
 
+        private void StudentsBtn_Click(object sender, EventArgs e)
+        {
+            // Tạo instance của StudentControl
+            var studentControl = new StudentControl1();
+
+            // Hiển thị StudentControl trong mainContentPanel
+            Shared.ShowMainContent(studentControl, MainContent);
+        }
+
         private void LecturerBtn_Click(object sender, EventArgs e)
         {
             LecturerControl control = new LecturerControl();
@@ -49,11 +58,6 @@ namespace QuanLyLichHoc
 
         }
 
-        private void StudentsBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -61,6 +65,11 @@ namespace QuanLyLichHoc
 
         }
 
+
+        private void MainContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void SubjectsBtn_Click(object sender, EventArgs e)
         {
@@ -81,6 +90,7 @@ namespace QuanLyLichHoc
 
             Shared.ShowMainContent(control, MainContent);
         }
+
 
 
     }
