@@ -58,10 +58,10 @@ namespace QuanLyLichHoc.Controls
                     lesson.lecturerName,
                     lesson.subjectName,
 
-                    timeValue = lesson.startTime == new TimeSpan(6, 45, 0) ? "Ca 1(Từ 6:45 đến 9:00)" :
-                                         lesson.startTime == new TimeSpan(9, 25, 0) ? "Ca 2(Từ 9:25 đến 11:40)" :
-                                         lesson.startTime == new TimeSpan(12, 15, 0) ? "Ca 3(Từ 12:15 đến 14:40)" :
-                                         lesson.startTime == new TimeSpan(14, 55, 0) ? "Ca 4(Từ 14:55 đến 17:15)" :
+                    timeValue = lesson.startTime == new TimeSpan(6, 45, 0) ? "Ca 1 (Từ 6:45 đến 9:00)" :
+                                         lesson.startTime == new TimeSpan(9, 25, 0) ? "Ca 2 (Từ 9:25 đến 11:40)" :
+                                         lesson.startTime == new TimeSpan(12, 15, 0) ? "Ca 3 (Từ 12:15 đến 14:40)" :
+                                         lesson.startTime == new TimeSpan(14, 55, 0) ? "Ca 4 (Từ 14:55 đến 17:15)" :
                                          null,
                     lessonDate = lesson.lessonDate.ToString("dd/MM/yyyy")
                 }).ToList();
@@ -165,6 +165,13 @@ namespace QuanLyLichHoc.Controls
                     subjectId = listSubjects[i].subjectId;
                 }
             }
+
+            if (_lesson.CheckDuplicateLesson(DateTime.Parse(dateValue.Text), startTime, endTime))
+            {
+                MessageBox.Show("Duplicate lesson detected. The same lesson time already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             Lesson lesson = new Lesson
             {
                 lessonDate = DateTime.Parse(dateValue.Text),
@@ -266,16 +273,24 @@ namespace QuanLyLichHoc.Controls
                         subjectId = listSubjects[i].subjectId;
                     }
                 }
-                Lesson lesson = new Lesson
+
+                if (_lesson.CheckDuplicateLesson(DateTime.Parse(dateValue.Text), startTime, endTime))
                 {
-                    lessonId = lessonId,
-                    lessonDate = DateTime.Parse(dateValue.Text),
-                    startTime = startTime,
-                    endTime = endTime,
-                    subjectId = subjectId,
-                    lecturerId = lecturerId,
-                };
-                _lesson.EditLesson(lesson);
+                    MessageBox.Show("Duplicate lesson detected. The same lesson time already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                } else {
+                    Lesson lesson = new Lesson
+                    {
+                        lessonId = lessonId,
+                        lessonDate = DateTime.Parse(dateValue.Text),
+                        startTime = startTime,
+                        endTime = endTime,
+                        subjectId = subjectId,
+                        lecturerId = lecturerId,
+                    };
+                    _lesson.EditLesson(lesson);
+                }
+                
                 ClearAddLesson();
                 LoadLesson();
             }
@@ -292,10 +307,10 @@ namespace QuanLyLichHoc.Controls
                 lesson.lessonId,
                 lesson.lecturerName,
                 lesson.subjectName,
-                timeValue = lesson.startTime == new TimeSpan(6, 45, 0) ? "Ca 1(Từ 6:45 đến 9:00)" :
-                                         lesson.startTime == new TimeSpan(9, 25, 0) ? "Ca 2(Từ 9:25 đến 11:40)" :
-                                         lesson.startTime == new TimeSpan(12, 15, 0) ? "Ca 3(Từ 12:15 đến 14:40)" :
-                                         lesson.startTime == new TimeSpan(14, 55, 0) ? "Ca 4(Từ 14:55 đến 17:15)" :
+                timeValue = lesson.startTime == new TimeSpan(6, 45, 0) ? "Ca 1 (Từ 6:45 đến 9:00)" :
+                                         lesson.startTime == new TimeSpan(9, 25, 0) ? "Ca 2 (Từ 9:25 đến 11:40)" :
+                                         lesson.startTime == new TimeSpan(12, 15, 0) ? "Ca 3 (Từ 12:15 đến 14:40)" :
+                                         lesson.startTime == new TimeSpan(14, 55, 0) ? "Ca 4 (Từ 14:55 đến 17:15)" :
                                          null,
                 lessonDate = lesson.lessonDate.ToString("dd/MM/yyyy")
             }).ToList();

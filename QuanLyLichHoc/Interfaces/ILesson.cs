@@ -20,5 +20,6 @@ namespace QuanLyLichHoc.Interfaces
 
         List<Lecturer> GetLecturer();
         List<Subject> GetSubject();
+        bool CheckDuplicateLesson(DateTime lessonDate, TimeSpan? startTime, TimeSpan? endTime);
     }
 }
