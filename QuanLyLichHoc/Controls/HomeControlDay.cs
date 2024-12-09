@@ -26,5 +26,15 @@ namespace QuanLyLichHoc.Controls
         {
             lbDay.Text = numDay;
         }
+        public void labels(string label)
+        {
+            labelValue.Text = label;
+        }
+
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

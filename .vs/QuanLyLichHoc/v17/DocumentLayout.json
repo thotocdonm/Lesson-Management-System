@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Lesson-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\lesson-management-system\\quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\lesson-management-system\\quanlylichhoc\\controls\\homecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\homecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\lesson-management-system\\quanlylichhoc\\services\\lessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\services\\lessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\lesson-management-system\\quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\lessoncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|d:\\lesson-management-system\\quanlylichhoc\\controls\\homecontrolday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4F57EC5-8CBF-48E8-8CBF-B85638F1EE77}|QuanLyLichHoc\\QuanLyLichHoc.csproj|solutionrelative:quanlylichhoc\\controls\\homecontrolday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,22 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LessonControl.cs",
-              "DocumentMoniker": "D:\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.cs",
-              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LessonControl.cs",
-              "ToolTip": "D:\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.cs",
-              "RelativeToolTip": "QuanLyLichHoc\\Controls\\LessonControl.cs",
-              "ViewState": "AQIAANUAAAAAAAAAAAD4v0gAAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T17:25:12.119Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -61,27 +43,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LessonService.cs",
-              "DocumentMoniker": "D:\\Lesson-Management-System\\QuanLyLichHoc\\Services\\LessonService.cs",
-              "RelativeDocumentMoniker": "QuanLyLichHoc\\Services\\LessonService.cs",
-              "ToolTip": "D:\\Lesson-Management-System\\QuanLyLichHoc\\Services\\LessonService.cs",
-              "RelativeToolTip": "QuanLyLichHoc\\Services\\LessonService.cs",
-              "ViewState": "AQIAAJkAAAAAAAAAAADwv58AAAAyAAAA",
+              "Title": "HomeControlDay.cs",
+              "DocumentMoniker": "D:\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\HomeControlDay.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\HomeControlDay.cs",
+              "ToolTip": "D:\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\HomeControlDay.cs",
+              "RelativeToolTip": "QuanLyLichHoc\\Controls\\HomeControlDay.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T16:08:30.855Z",
+              "WhenOpened": "2024-12-08T23:56:54.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LessonControl.cs [Design]",
-              "DocumentMoniker": "D:\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.cs",
-              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\LessonControl.cs",
-              "ToolTip": "D:\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\LessonControl.cs [Design]",
-              "RelativeToolTip": "QuanLyLichHoc\\Controls\\LessonControl.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "HomeControl.cs",
+              "DocumentMoniker": "D:\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\HomeControl.cs",
+              "RelativeDocumentMoniker": "QuanLyLichHoc\\Controls\\HomeControl.cs",
+              "ToolTip": "D:\\Lesson-Management-System\\QuanLyLichHoc\\Controls\\HomeControl.cs",
+              "RelativeToolTip": "QuanLyLichHoc\\Controls\\HomeControl.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAAAuwNkAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T14:17:00.722Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-08T19:45:54.866Z",
+              "EditorCaption": ""
             }
           ]
         }

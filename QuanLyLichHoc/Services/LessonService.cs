@@ -74,18 +74,33 @@ namespace QuanLyLichHoc.Services
             {
                 using (var db = new DataClasses1DataContext())
                 {
-                    var lesson = db.Lessons
-                              .Where(l => l.isDeleted == 0)
-                              .Select(l => new Lesson
-                              {
-                                  lessonId = l.lessonId,
-                                  lessonDate = l.lessonDate,
-                                  startTime = l.startTime,
-                                  endTime = l.endTime,
-                                  lecturerId = l.lecturerId,
-                                  subjectId = l.subjectId
-                              }).ToList();
-                    return lesson;
+                    var lessons = (from lesson in db.Lessons
+                                  where lesson.isDeleted == 0
+                                  select lesson).ToList();
+                    return lessons;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool CheckDuplicateLesson(DateTime lessonDate, TimeSpan? startTime, TimeSpan? endTime)
+        {
+            try
+            {
+                using (var db = new DataClasses1DataContext())
+                {
+  
+                    var duplicateLesson = db.Lessons
+                                            .Where(lesson => lesson.isDeleted == 0 &&
+                                                             lesson.lessonDate.Date == lessonDate.Date && 
+                                                             lesson.startTime == startTime &&
+                                                             lesson.endTime == endTime)
+                                            .FirstOrDefault();
+
+                    return duplicateLesson != null; 
                 }
             }
             catch (Exception ex)
