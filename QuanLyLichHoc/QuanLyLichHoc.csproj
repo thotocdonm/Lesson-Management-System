@@ -221,7 +221,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UpdateLecturer\UpdateLecturer.resx">
       <DependentUpon>UpdateLecturer.cs</DependentUpon>
-
+      </EmbeddedResource>
     <EmbeddedResource Include="Controls\SubjectControls.resx">
       <DependentUpon>SubjectControls.cs</DependentUpon>
     </EmbeddedResource>
