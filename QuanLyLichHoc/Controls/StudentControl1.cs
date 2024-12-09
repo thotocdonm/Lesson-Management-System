@@ -1,11 +1,7 @@
-﻿using System;
-using System.Windows.Forms;
-using System.Xml.Linq;
-using TheArtOfDev.HtmlRenderer.Adapters;
-using System.Data;
-using QuanLyLichHoc.Services;
-using QuanLyLichHoc.Models;
+﻿using QuanLyLichHoc.Services;
+using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 
 namespace QuanLyLichHoc.Controls
@@ -24,7 +20,7 @@ namespace QuanLyLichHoc.Controls
         }
         public void LoadLecturer()
         {
-            List<Student> displayStudent = _student.GetLecturer();
+            List<Models.Student> displayStudent = _student.GetLecturer();
             dgvStudents.Columns.Clear();
             dgvStudents.DataSource = displayStudent;
             dgvStudents.Columns["studentId"].Visible = false;
@@ -76,7 +72,7 @@ namespace QuanLyLichHoc.Controls
             {
                 _student.AddLecturer(lecture);
                 MessageBox.Show("Employee added successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+
                 LoadLecturer();
 
             }
@@ -101,7 +97,7 @@ namespace QuanLyLichHoc.Controls
                 string studentGender = TxtGender.Text;
                 string studentName = txtName.Text;
                 DateTime studentDob = dateTimePicker1.Value;
-                Student lesson = new Student
+                Models.Student lesson = new Models.Student
                 {
                     studentId = studentId,
                     studentDob = DateTime.Parse(studentDob.ToString()),
@@ -111,7 +107,7 @@ namespace QuanLyLichHoc.Controls
                     studentName = studentName,
                 };
                 _student.EditLecturer(lesson);
-                LoadLecturer() ;
+                LoadLecturer();
             }
         }
 

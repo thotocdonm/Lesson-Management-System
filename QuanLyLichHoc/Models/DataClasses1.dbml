@@ -1,7 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Lesson_Management_System" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-
   <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-UOULN0V\SQLEXPRESS;Initial Catalog=Lesson_Management_System;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="QuanLyLichHoc.Properties.Settings" SettingsPropertyName="Lesson_Management_SystemConnectionString1" Provider="System.Data.SqlClient" />
-
   <Table Name="dbo.Lecturers" Member="Lecturers">
     <Type Name="Lecturer">
       <Column Name="lecturerId" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />

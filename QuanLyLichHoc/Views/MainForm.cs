@@ -66,10 +66,7 @@ namespace QuanLyLichHoc
         }
 
 
-        private void MainContent_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
 
         private void SubjectsBtn_Click(object sender, EventArgs e)
         {
