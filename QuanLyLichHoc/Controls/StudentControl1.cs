@@ -3,34 +3,48 @@ using System.Windows.Forms;
 using System.Xml.Linq;
 using TheArtOfDev.HtmlRenderer.Adapters;
 using System.Data;
+using QuanLyLichHoc.Services;
+using QuanLyLichHoc.Models;
+using System.Collections.Generic;
 
 
 namespace QuanLyLichHoc.Controls
 {
     public partial class StudentControl1 : UserControl
     {
-        private DataTable studentTable;
+        private StudentService _student;
 
         public StudentControl1()
         {
             InitializeComponent();
-            InitializeStudentTable();
+            dgvStudents.CellClick += dgvStudents_CellClick;
+            _student = new StudentService();
+            LoadLecturer();
 
         }
-        private void InitializeStudentTable()
+        public void LoadLecturer()
         {
-            // Khởi tạo DataTable
-            studentTable = new DataTable();
+            List<Student> displayStudent = _student.GetLecturer();
+            dgvStudents.Columns.Clear();
+            dgvStudents.DataSource = displayStudent;
+            dgvStudents.Columns["studentId"].Visible = false;
+            Edit.Visible = false;
+            Delete.Visible = false;
+        }
+        private DataGridViewRow row;
+        private void dgvStudents_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
 
-            // Thêm các cột vào DataTable
-            studentTable.Columns.Add("Name", typeof(string));
-            studentTable.Columns.Add("Birth", typeof(string));
-            studentTable.Columns.Add("Email", typeof(string));
-            studentTable.Columns.Add("PhoneNumber", typeof(string));
-            studentTable.Columns.Add("Gender", typeof(string));
-
-            // Gắn DataTable vào DataGridView
-            dgvStudents.DataSource = studentTable;
+            // Get the selected row
+            row = dgvStudents.Rows[e.RowIndex];
+            txtName.Text = row.Cells["studentName"].Value?.ToString();
+            txtEmail.Text = row.Cells["studentEmail"].Value?.ToString();
+            TxtGender.Text = row.Cells["studentGender"].Value?.ToString();
+            TxtPhone.Text = row.Cells["studentPhone"].Value?.ToString();
+            dateTimePicker1.Value = DateTime.Parse(row.Cells["studentDob"].Value?.ToString());
+            Edit.Visible = true;
+            Delete.Visible = true;
         }
 
         private void StudentControl1_Load(object sender, EventArgs e)
@@ -50,31 +64,26 @@ namespace QuanLyLichHoc.Controls
 
         private void Add_Click(object sender, EventArgs e)
         {
-            // Lấy dữ liệu từ TextBox
-            string name = txtName.Text.Trim();
-            string birth = txtBirth.Text.Trim();
-            string email = txtEmail.Text.Trim();
-            string phoneNumber = TxtPhone.Text.Trim();
-            string Gender = TxtGender.Text.Trim();
-
-            // Kiểm tra dữ liệu hợp lệ
-            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(birth) ||
-                string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(phoneNumber) ||
-                string.IsNullOrWhiteSpace(Gender))
+            Models.Student lecture = new Models.Student
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo");
-                return;
+                studentName = txtName.Text,
+                studentGender = TxtGender.Text,
+                studentEmail = txtEmail.Text,
+                studentPhone = TxtPhone.Text,
+                studentDob = dateTimePicker1.Value,
+            };
+            try
+            {
+                _student.AddLecturer(lecture);
+                MessageBox.Show("Employee added successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                LoadLecturer();
+
             }
-
-            // Thêm vào DataTable
-            studentTable.Rows.Add(name, birth, email, phoneNumber, Gender);
-
-            // Xóa nội dung trong các TextBox
-            txtName.Clear();
-            txtBirth.Clear();
-            txtEmail.Clear();
-            TxtPhone.Clear();
-            TxtGender.Clear();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -84,19 +93,25 @@ namespace QuanLyLichHoc.Controls
 
         private void Edit_Click(object sender, EventArgs e)
         {
-            if (dgvStudents.SelectedRows.Count > 0)
+            if (row != null)
             {
-                DataGridViewRow selectedRow = dgvStudents.SelectedRows[0];
-
-                selectedRow.Cells["Name"].Value = txtName.Text.Trim();
-                selectedRow.Cells["Birth"].Value = txtBirth.Text.Trim();
-                selectedRow.Cells["Email"].Value = txtEmail.Text.Trim();
-                selectedRow.Cells["PhoneNumber"].Value = TxtPhone.Text.Trim();
-                selectedRow.Cells["Gender"].Value = TxtGender.Text.Trim();
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn một dòng để sửa!", "Thông báo");
+                string studentId = row.Cells["studentId"].Value?.ToString();
+                string studentPhone = TxtPhone.Text;
+                string studentEmail = txtEmail.Text;
+                string studentGender = TxtGender.Text;
+                string studentName = txtName.Text;
+                DateTime studentDob = dateTimePicker1.Value;
+                Student lesson = new Student
+                {
+                    studentId = studentId,
+                    studentDob = DateTime.Parse(studentDob.ToString()),
+                    studentPhone = studentPhone,
+                    studentEmail = studentEmail,
+                    studentGender = studentGender,
+                    studentName = studentName,
+                };
+                _student.EditLecturer(lesson);
+                LoadLecturer() ;
             }
         }
 
@@ -107,13 +122,12 @@ namespace QuanLyLichHoc.Controls
 
         private void Delete_Click(object sender, EventArgs e)
         {
-            if (dgvStudents.SelectedRows.Count > 0)
+            if (row != null)
             {
-                dgvStudents.Rows.RemoveAt(dgvStudents.SelectedRows[0].Index);
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn một dòng để xóa!", "Thông báo");
+                string lectureId = row.Cells["studentId"].Value?.ToString();
+                Models.Student lecture = _student.GetLecturerById(lectureId);
+                _student.DeleteLecturer(lecture);
+                LoadLecturer();
             }
         }
 
