@@ -1,23 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Lesson_Management_System" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-
   <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-UOULN0V\SQLEXPRESS;Initial Catalog=Lesson_Management_System;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="QuanLyLichHoc.Properties.Settings" SettingsPropertyName="Lesson_Management_SystemConnectionString1" Provider="System.Data.SqlClient" />
-
-  <Table Name="dbo.Enrollments" Member="Enrollments">
-    <Type Name="Enrollment">
-      <Column Name="enrollmentId" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="studentId" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="subjectId" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="enrolledAt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="createAt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="isDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Student_Enrollment" Member="Student" ThisKey="studentId" OtherKey="studentId" Type="Student" IsForeignKey="true" />
-      <Association Name="Subject_Enrollment" Member="Subject" ThisKey="subjectId" OtherKey="subjectId" Type="Subject" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.Lecturers" Member="Lecturers">
     <Type Name="Lecturer">
       <Column Name="lecturerId" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="userId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="lecturerName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="lecturerDob" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
       <Column Name="lecturerEmail" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
@@ -26,7 +11,6 @@
       <Column Name="createAt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="isDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Lecturer_Lesson" Member="Lessons" ThisKey="lecturerId" OtherKey="lecturerId" Type="Lesson" />
-      <Association Name="User_Lecturer" Member="User" ThisKey="userId" OtherKey="userId" Type="User" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Lessons" Member="Lessons">
@@ -46,7 +30,6 @@
   <Table Name="dbo.Students" Member="Students">
     <Type Name="Student">
       <Column Name="studentId" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="userId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="studentName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="studentDob" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
       <Column Name="studentEmail" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
@@ -54,8 +37,6 @@
       <Column Name="studentPhone" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
       <Column Name="createAt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="isDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Student_Enrollment" Member="Enrollments" ThisKey="studentId" OtherKey="studentId" Type="Enrollment" />
-      <Association Name="User_Student" Member="User" ThisKey="userId" OtherKey="userId" Type="User" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Subjects" Member="Subjects">
@@ -65,7 +46,6 @@
       <Column Name="creditHours" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="createAt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="isDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Subject_Enrollment" Member="Enrollments" ThisKey="subjectId" OtherKey="subjectId" Type="Enrollment" />
       <Association Name="Subject_Lesson" Member="Lessons" ThisKey="subjectId" OtherKey="subjectId" Type="Lesson" />
     </Type>
   </Table>
@@ -78,8 +58,6 @@
       <Column Name="email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="createAt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="isDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="User_Lecturer" Member="Lecturers" ThisKey="userId" OtherKey="userId" Type="Lecturer" />
-      <Association Name="User_Student" Member="Students" ThisKey="userId" OtherKey="userId" Type="Student" />
     </Type>
   </Table>
 </Database>
