@@ -163,6 +163,10 @@
     <Compile Include="Models\DataClasses1.cs">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
+
+    <Compile Include="Interfaces\ILesson.cs" />
+    <Compile Include="Models\LessonDetail.cs" />
+
     <Compile Include="Forms\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,17 +174,22 @@
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
 
+
     <Compile Include="Models\DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
 
+    <Compile Include="Services\LessonService.cs" />
+
+
     <Compile Include="Services\LecturerService.cs" />
 
     <Compile Include="Services\EnumErrCodeService.cs" />
     <Compile Include="Services\FunctionResultService.cs" />
     <Compile Include="Services\SubjectService.cs" />
+
 
     <Compile Include="Utils\Shared.cs" />
     <Compile Include="Views\StudentForm.cs">
@@ -277,7 +286,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+
+    <Folder Include="Resources\" />
+
     <Content Include="Resources\Icon\icons8-teacher-48.png" />
+
   </ItemGroup>
   <ItemGroup>
 
