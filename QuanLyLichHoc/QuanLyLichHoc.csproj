@@ -99,25 +99,121 @@
     <Compile Include="Controls\LessonControl.Designer.cs">
       <DependentUpon>LessonControl.cs</DependentUpon>
     </Compile>
+
     <Compile Include="Controls\StudentControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\StudentControl1.Designer.cs">
       <DependentUpon>StudentControl1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Login\LoginForm.cs">
+ 
+
+
+    <Compile Include="Controls\LecturerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LecturerControl.Designer.cs">
+      <DependentUpon>LecturerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LecturerInfControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LecturerInfControl.Designer.cs">
+      <DependentUpon>LecturerInfControl.cs</DependentUpon>
+    </Compile>
+  
+
+    <Compile Include="Controls\SubjectControls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SubjectControls.Designer.cs">
+      <DependentUpon>SubjectControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Student\StudentInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Student\StudentInformationControl.Designer.cs">
+      <DependentUpon>StudentInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+
+
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Login\LoginForm.Designer.cs">
+    <Compile Include="Controls\HomeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\HomeControl.Designer.cs">
+      <DependentUpon>HomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HomeControlDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\HomeControlDay.Designer.cs">
+      <DependentUpon>HomeControlDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+
+
+    <Compile Include="Forms\RoleLecturer\RoleLecturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RoleLecturer\RoleLecturerForm.Designer.cs">
+      <DependentUpon>RoleLecturerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateLecturer\UpdateLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateLecturer\UpdateLecturer.Designer.cs">
+      <DependentUpon>UpdateLecturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ILecturer.cs" />
+
+    <Compile Include="Models\DataClasses1.cs">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+
+    <Compile Include="Interfaces\ILesson.cs" />
+    <Compile Include="Models\LessonDetail.cs" />
+
+    <Compile Include="Forms\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+
+
+
     <Compile Include="Models\DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
+
     <Compile Include="Services\StudentService.cs" />
+
+
+    <Compile Include="Services\LessonService.cs" />
+
+
+    <Compile Include="Services\LecturerService.cs" />
+
+    <Compile Include="Services\EnumErrCodeService.cs" />
+    <Compile Include="Services\FunctionResultService.cs" />
+    <Compile Include="Services\SubjectService.cs" />
+
+
+
     <Compile Include="Utils\Shared.cs" />
+    <Compile Include="Views\StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,14 +222,50 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
+    <EmbeddedResource Include="Controls\LecturerInfControl.resx">
+      <DependentUpon>LecturerInfControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HomeControl.resx">
+      <DependentUpon>HomeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HomeControlDay.resx">
+      <DependentUpon>HomeControlDay.cs</DependentUpon>
+
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\LessonControl.resx">
       <DependentUpon>LessonControl.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="Controls\StudentControl1.resx">
       <DependentUpon>StudentControl1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Login\LoginForm.resx">
+ 
+
+
+    <EmbeddedResource Include="Controls\LecturerControl.resx">
+      <DependentUpon>LecturerControl.cs</DependentUpon>
+    </EmbeddedResource>
+   
+    <EmbeddedResource Include="Forms\RoleLecturer\RoleLecturerForm.resx">
+      <DependentUpon>RoleLecturerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateLecturer\UpdateLecturer.resx">
+      <DependentUpon>UpdateLecturer.cs</DependentUpon>
+      </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SubjectControls.resx">
+      <DependentUpon>SubjectControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Student\StudentInformationControl.resx">
+      <DependentUpon>StudentInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -143,10 +275,18 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+
+
+    <EmbeddedResource Include="Views\StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+
+
     <None Include="Models\DataClasses1.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
@@ -169,12 +309,42 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
+
     <Folder Include="Interface\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+
+
+    <Folder Include="Resources\" />
+
+    <Content Include="Resources\Icon\icons8-teacher-48.png" />
+
+  </ItemGroup>
+  <ItemGroup>
+
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+
+    <Folder Include="Forms\Login\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile-password-forgot.png" />
+    <Content Include="Resources\Register.jpg" />
+
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
 </Project>
